@@ -30,23 +30,22 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jason Crichton"
-					tagline="I am a creative technology leader with over two decades of experience in the e-commerce industry who is currently based in Chicago, Illinois."
+					greeting="Hello, my name is Jason."
+					overview="I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> UI/UX Design</Pill>
 						<Pill><Icon icon="leader" size="1.33em" /> Leader</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="shopping-bag" size="1.33em" /> E-commerce</Pill>
+						
 					</div>
 				</Hero>
 
-				<img
-					alt="Jason Crichton Bald Head Wonder"
-					width="480"
-					height="620"
-					src="/assets/hero-01.jpg"
-				/>
+				<a href="#">See My Work</a>
+				<a href="#">More About Me</a>
+
 			</header>
 
 			<Skills />
@@ -107,43 +106,15 @@ const projects = (await getCollection('work'))
 </BaseLayout>
 
 <style>
-	.hero {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2rem;
-	}
-
 	.roles {
 		display: none;
 	}
 
-	.hero img {
-		aspect-ratio: 5 / 4;
-		object-fit: cover;
-		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
-
 	@media (min-width: 50em) {
-		.hero {
-			display: grid;
-			grid-template-columns: 6fr 4fr;
-			padding-inline: 2.5rem;
-			gap: 3.75rem;
-		}
-
 		.roles {
 			margin-top: 0.5rem;
 			display: flex;
 			gap: 0.5rem;
-		}
-
-		.hero img {
-			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
-			object-fit: cover;
 		}
 	}
 
