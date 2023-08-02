@@ -80,7 +80,6 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-body: 'Inter', var(--font-system);
 	--font-accent: "Outfit", var(--font-system);
-	--font-brand: Rubik, var(--font-system);
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
@@ -117,7 +116,7 @@ h3,
 h4,
 h5 {
 	line-height: 1.1;
-	font-family: var(--font-brand);
+	font-family: var(--font-accent);
 	font-weight: 600;
 	color: var(--gray-100);
 }

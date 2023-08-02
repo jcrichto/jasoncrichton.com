@@ -41,12 +41,12 @@ const projects = (await getCollection('work'))
 </section>
 	
 
-	<div class="wrapper">
+	<div class="container">
 	<main>
 		<Skills />
 		<section class="section with-background with-cta">
 			<header class="section-header stack gap-2 lg:gap-4">
-				<h3>Selected Work</h3>
+				<h3 class="heading-1">Selected Work</h3>
 				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
 
@@ -72,7 +72,7 @@ const projects = (await getCollection('work'))
 
 		<section>
 			<header>
-				<h3>Awards</h3>
+				<h3 class="heading-1">Awards</h3>
 				<p>
 					I have been fortunate to win a number of accolades throughout my career for various digital experiences.
 
@@ -96,28 +96,6 @@ const projects = (await getCollection('work'))
 </BaseLayout>
 
 <style>
-	.roles {
-		display: none;
-	}
-
-	@media (min-width: 50em) {
-		.roles {
-			margin-top: 0.5rem;
-			display: flex;
-			gap: 0.5rem;
-		}
-	}
-
-	/* ====================================================== */
-
-	.section {
-		display: grid;
-		gap: 2rem;
-	}
-
-	.with-background {
-		position: relative;
-	}
 
 	.awards {
 		display: flex;
@@ -154,17 +132,7 @@ const projects = (await getCollection('work'))
 		--hero-bg: var(--bg-image-subtle-1);
 	}
 
-	.section-header {
-		justify-self: center;
-		text-align: center;
-		max-width: 50ch;
-		font-size: var(--text-md);
-		color: var(--gray-300);
-	}
 
-	.section-header h3 {
-		font-size: var(--text-2xl);
-	}
 
 
 	.hero {
@@ -184,9 +152,7 @@ const projects = (await getCollection('work'))
 	}
 
 
-	.greeting {
-		/* font-size: var(--text-xl); */
-		
+	.greeting {		
 		font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
 		font-family: var(--font-accent);
 		color: var(--gray-0);
@@ -207,41 +173,6 @@ const projects = (await getCollection('work'))
 	}
 
 
-	@media (min-width: 50em) {
-		.section {
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
-			gap: 5rem;
-		}
-
-		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
-		}
-
-		.section-header {
-			grid-area: header;
-			font-size: var(--text-lg);
-		}
-
-		.section-header h3 {
-			font-size: var(--text-4xl);
-		}
-
-		.with-cta .section-header {
-			justify-self: flex-start;
-			text-align: left;
-		}
-
-		.gallery {
-			grid-area: gallery;
-		}
-
-		.cta {
-			grid-area: cta;
-		}
-	}
-
-	/* ====================================================== */
 
 	.mention-card {
 		display: flex;
