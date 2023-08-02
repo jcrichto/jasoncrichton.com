@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
 
 ---
 
@@ -19,8 +18,7 @@ import Hero from '../components/Hero.astro';
 					method="POST"
 					data-netlify="true"
 					netlify-honeypot="bot-field"
-					data-netlify-recaptcha="true"
-					>
+					data-netlify-recaptcha="true">
 					<label><input type="text" name="name" /></label>
 					<label> <input type="email" name="email" /></label>
 					<label><textarea name="message"></textarea></label>

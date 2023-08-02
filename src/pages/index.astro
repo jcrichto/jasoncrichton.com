@@ -288,8 +288,7 @@ const projects = (await getCollection('work'))
 var _CONTENT = [ 
 	"Design.", 
 	"Code.", 
-	"Leading.",
-	"Hamburgers."
+	"Leading."
 ];
 
 // Current sentence being processed
@@ -299,7 +298,7 @@ var _PART = 0;
 var _PART_INDEX = 0;
 
 // Holds the handle returned from setInterval
-var _INTERVAL_VAL;
+var _INTERVAL_VAL: number | undefined;
 
 // Element that holds the text
 var _ELEMENT = document.querySelector("#text");
