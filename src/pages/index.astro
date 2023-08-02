@@ -1,15 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 
+import { Icon } from 'astro-icon';
+
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
-import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Page section components
@@ -26,82 +25,73 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout>
-	<div class="stack gap-20 lg:gap-48">
-		<div class="wrapper stack gap-8 lg:gap-20">
-			<header class="hero">
-				<Hero
-					greeting="Hello, my name is Jason."
-					overview="I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois."
-					align="start"
-				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> UI/UX Design</Pill>
-						<Pill><Icon icon="leader" size="1.33em" /> Leader</Pill>
-						<Pill><Icon icon="shopping-bag" size="1.33em" /> E-commerce</Pill>
-						
-					</div>
-				</Hero>
 
-				<a href="#">See My Work</a>
-				<a href="#">More About Me</a>
+<section class="hero">
+	<div class="hero-content">
+		<div class="greeting gradient-text">I ❤️ <span id="text"></span><span id="cursor"></span></div>
+		<h1 class="overview">I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois.</h1>
+	
+		<div class="roles">
+			<Icon name="ph:code" width="1.33em" /> Developer
+			<Icon name="ph:pencil-line" size="1.33em" /> UI/UX Design
+			<Icon name="ph:crown-bold" size="1.33em" /> Leader
+			<Icon name="ph:shopping-bag" size="1.33em" /> E-commerce
+		</div>
+	</div>
+</section>
+	
 
+	<div class="wrapper">
+	<main>
+		<Skills />
+		<section class="section with-background with-cta">
+			<header class="section-header stack gap-2 lg:gap-4">
+				<h3>Selected Work</h3>
+				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
 
-			<Skills />
-		</div>
+			<div class="gallery">
+				<Grid variant="offset">
+					{
+						projects.map((project) => (
+							<li>
+								<PortfolioPreview project={project} />
+							</li>
+						))
+					}
+				</Grid>
+			</div>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
-			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
-				</header>
+			<div class="cta">
+				<CallToAction href="/work/">
+					View All
+					<Icon name="ph:arrow-right" width="1.2em" />
+				</CallToAction>
+			</div>
+		</section>
 
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
+		<section>
+			<header>
+				<h3>Awards</h3>
+				<p>
+					I have been fortunate to win a number of accolades throughout my career for various digital experiences.
 
-				<div class="cta">
-					<CallToAction href="/work/">
-						View All
-						<Icon icon="arrow-right" size="1.2em" />
-					</CallToAction>
-				</div>
+					I’ve worked on lots of projects that have won awards throughout my career.  It's always and honor to work with a 
+				</p>
+			</header>
+
+			<section class="awards">
+				<Icon name="awards/aiga" />
+				<Icon name="awards/davey-new" />
+				<Icon name="awards/w3" />
+				<Icon name="awards/web" />
+				<Icon name="awards/webby" />
 			</section>
+			</div>
+		</section>
+	</main>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-		</main>
-
-		<ContactCTA />
+	<ContactCTA />
 	</div>
 </BaseLayout>
 
@@ -127,6 +117,19 @@ const projects = (await getCollection('work'))
 
 	.with-background {
 		position: relative;
+	}
+
+	.awards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 4rem;
+		padding: 4rem;
+	}
+
+	.awards svg {
+			width: 100px;
+			height: 100px;
 	}
 
 	.with-background::before {
@@ -162,6 +165,47 @@ const projects = (await getCollection('work'))
 	.section-header h3 {
 		font-size: var(--text-2xl);
 	}
+
+
+	.hero {
+		height: 70dvh;
+		background: url('./assets/hero-01.jpg') no-repeat;
+		background-position: center bottom -100px;
+		background-size: cover;
+		/* position: fixed; */
+		display: flex;
+		width: 100%;
+		padding-inline: 1.5rem;
+	}
+
+	.hero-content {
+		margin-top: 5rem;
+		width: 50%;
+	}
+
+
+	.greeting {
+		/* font-size: var(--text-xl); */
+		
+		font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
+		font-family: var(--font-accent);
+		color: var(--gray-0);
+		line-height: 1.5;
+	}
+
+	.overview {
+		font-size: clamp(1rem, -0.875rem + 8.333vw, 1rem);
+		font-weight: 400; 
+		font-family: var(--font-base);
+	}
+
+	@media (min-width: 50em) {
+		.hero {
+			background-position: bottom right;
+			background-size: contain;
+		}
+	}
+
 
 	@media (min-width: 50em) {
 		.section {
@@ -218,4 +262,97 @@ const projects = (await getCollection('work'))
 			height: 9.5rem;
 		}
 	}
+
+
+	#cursor {
+		display: inline-block;
+		vertical-align: middle;
+		width: 3px;
+		height: 50px;
+		background-color: orange;
+		animation: blink .75s step-end infinite;
+	}
+
+	@keyframes blink {
+		from, to { 
+			background-color: transparent 
+		}
+		50% { 
+			background-color: orange; 
+		}
+	}
 </style>
+
+<script>
+// List of sentences
+var _CONTENT = [ 
+	"Design.", 
+	"Code.", 
+	"Leading.",
+	"Hamburgers."
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+</script>

@@ -19,3 +19,5 @@ An antiquated technology platform, the inability to manage marketing content and
 57% increase month-over-month in site revenue
 
 The end result was a record double-digit sales increase within days of launch.
+
+<img src="/assets/work/keratin-complex/system-architecture.svg" />

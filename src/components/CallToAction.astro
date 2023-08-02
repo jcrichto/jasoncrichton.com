@@ -6,7 +6,7 @@ interface Props {
 const { href } = Astro.props;
 ---
 
-<a href={href}><slot /></a>
+<a href={href} class="gradient-bg"><slot /></a>
 
 <style>
 	a {
@@ -24,6 +24,7 @@ const { href } = Astro.props;
 		background: var(--gradient-accent-orange);
 		box-shadow: var(--shadow-md);
 		white-space: nowrap;
+		font-family: var(--font-accent);
 	}
 
 	@media (min-width: 20em) {

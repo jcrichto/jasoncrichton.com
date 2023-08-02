@@ -1,5 +1,6 @@
 ---
-import Icon from './Icon.astro';
+// import Icon from './Icon.astro';
+import { Icon } from 'astro-icon';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -14,7 +15,7 @@ const textLinks: { label: string; href: string }[] = [
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<Icon name="ph:terminal-window" class="ani-gradient" />
 			Jason Crichton
 		</a>
 		<menu-button>
@@ -92,9 +93,9 @@ const textLinks: { label: string; href: string }[] = [
 	nav {
 		z-index: 9999;
 		position: relative;
-		font-family: var(--font-brand);
+		font-family: var(--font-accent);
 		font-weight: 500;
-		margin-bottom: 3.5rem;
+		/* margin-bottom: 3.5rem; */
 	}
 
 	.menu-header {
@@ -186,31 +187,6 @@ const textLinks: { label: string; href: string }[] = [
 		box-shadow: var(--shadow-lg);
 	}
 
-	.socials {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.625rem;
-		font-size: var(--icon-size);
-	}
-
-	.social {
-		display: flex;
-		padding: var(--icon-padding);
-		text-decoration: none;
-		color: var(--accent-dark);
-		transition: color var(--theme-transition);
-	}
-
-	.social:hover,
-	.social:focus {
-		color: var(--accent-text-over);
-	}
-
-	.theme-toggle {
-		display: flex;
-		align-items: center;
-		height: calc(var(--icon-size) + 2 * var(--icon-padding));
-	}
 
 	@media (min-width: 50em) {
 		nav {
@@ -226,7 +202,7 @@ const textLinks: { label: string; href: string }[] = [
 		}
 
 		.site-title {
-			font-size: var(--text-lg);
+			font-size: 1.5rem;
 		}
 
 		#menu-content {
@@ -267,7 +243,7 @@ const textLinks: { label: string; href: string }[] = [
 
 		.link.active {
 			color: var(--accent-text-over);
-			background-color: var(--accent-regular);
+			/* background-color: var(--accent-regular); */
 		}
 
 		.menu-footer {
@@ -280,9 +256,6 @@ const textLinks: { label: string; href: string }[] = [
 			box-shadow: none;
 		}
 
-		.socials {
-			display: none;
-		}
 	}
 
 	@media (forced-colors: active) {
