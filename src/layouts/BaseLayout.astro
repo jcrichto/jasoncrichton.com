@@ -10,17 +10,18 @@ import Footer from '../components/Footer.astro';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
+	bodyclass?: string | undefined;
 }
 
-const { title, description } = Astro.props;
+const { title, description, bodyclass } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<MainHead title={title} description={description} />
 	</head>
-	<body>
-		<div class="stack backgrounds">
+	<body class={bodyclass || ''}>
+		<div class="backgrounds">
 			<Nav />
 			<slot />
 			<Footer />
@@ -67,7 +68,6 @@ const { title, description } = Astro.props;
 					--bg-image-footer: url('/assets/backgrounds/bg-footer-light-1440w.jpg');
 				}
 			}
-
 
 		</style>
 	</body>

@@ -1,17 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroContent from '../components/HeroContent.astro';
 ---
 
 <BaseLayout
   title="Contact | Jason Crichton"
   description="Contact Jason Crichton"
 >
+<HeroContent pageTitle='Contact' pageSummary="Interested in reaching out? Let's Connect!" />
+
   <script src="//unpkg.com/alpinejs" defer></script>
   <main class="container flow" data-type="narrow">
-    <h1 class="fs-900 gradient-text">Contact</h1>
-    <p>Interested in reaching out? Let's Connect!</p>
 
-    <section class="">
+
+    <section>
       <form
         hidden
         name="contact"

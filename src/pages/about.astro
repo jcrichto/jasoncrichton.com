@@ -2,11 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
+import HeroContent from '../components/HeroContent.astro';
 ---
 
-<BaseLayout title="About | Jason Crichton" description="About Jason Crichton Lorem Ipsum">
+<BaseLayout title="About | Jason Crichton" description="About Jason Crichton">
+
+	<HeroContent pageTitle='About' pageSummary='See my most recent projects below to get an idea of my past experience.' />
+	
 	<div class="stack gap-20">
-		<main class="wrapper about">
+		<main class="container about">
 
 			<img src="/assets/family.jpg" alt="Jason Crichton at work with a colleague" />
 

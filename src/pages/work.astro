@@ -6,6 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Grid from '../components/Grid.astro';
+import HeroContent from '../components/HeroContent.astro';
 
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
@@ -13,14 +14,15 @@ const projects = (await getCollection('work')).sort(
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+	title="My Work | Jason Crichton"
+	description="Learn about Jason Crichton's most recent projects"
 >
 
-	<main class="container" data-type="full-bleed">
+	<HeroContent pageTitle='Work' pageSummary='See my most recent projects below to get an idea of my past experience.' />
 
-		<h1>My Work</h1>
-		<p>See my most recent projects below to get an idea of my past experience.</p>
+	<main class="container" data-type="wide">
+
+
 
 		<Grid variant="offset">
 			{

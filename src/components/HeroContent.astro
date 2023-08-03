@@ -1,0 +1,27 @@
+---
+interface Props {
+	pageTitle: string;
+    pageSummary?: string;
+}
+
+const { pageTitle, pageSummary } = Astro.props;
+---
+
+<div class="hero-content">
+    <div class="container" data-type="wide">
+        <h1 class="heading-1 gradient-text">{pageTitle}</h1>
+        {pageSummary && <p>{pageSummary}</p>}
+    </div>
+</div>
+
+
+
+
+
+<style>
+.hero-content {
+    background-color: #fff; 
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+</style>

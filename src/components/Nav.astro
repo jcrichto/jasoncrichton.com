@@ -16,7 +16,7 @@ const textLinks: { label: string; href: string }[] = [
 	<div class="container" data-type="wide">
 	<div class="menu-header">
 		<a href="/" class="site-title fw-bold">
-			<Icon name="ph:terminal-window" />
+			<Icon name="ph:terminal-window" /> <span>Jason <br>Crichton</span>
 		</a>
 		<menu-button>
 			<template>
@@ -92,10 +92,9 @@ const textLinks: { label: string; href: string }[] = [
 <style>
 	nav {
 		z-index: 9999;
-		position: relative;
+		position: absolute;
 		font-family: var(--font-accent);
-		font-weight: 500;
-		background-color: #fff;
+		width: 100%;
 	}
 
 	.menu-header {
@@ -113,6 +112,14 @@ const textLinks: { label: string; href: string }[] = [
 		color: var(--gray-0);
 		text-decoration: none;
 		font-family: var(--font-accent);
+	}
+
+	.site-title svg {
+		width: 5rem;
+	}
+
+	body.home .site-title span {
+		display: none;
 	}
 
 	.menu-button {

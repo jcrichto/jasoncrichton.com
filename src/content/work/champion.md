@@ -17,6 +17,7 @@ tags:
 ---
 
 How does one motivate young, trend-setting consumers? Design a brand experience that encourages exploration of an exclusive fashion collection on the devices they use most.
+
 Exclusivity and self-expression motivate the streetwear consumer. They connect with authentic brands that offer unique styles that are not mass produced. This valuable feedback informed design iterations and the end result was an experience that reflected the Champion LIFE brand and resonated with this millennial consumer.
 
 Elevate’s design team used interactive prototypes and tested them in the field with real users to drive the most successful design solution. The shoppable lookbook made up of time-released collections resulted in several product lines selling out in days after release.
