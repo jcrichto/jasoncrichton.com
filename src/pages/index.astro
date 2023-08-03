@@ -26,10 +26,13 @@ const projects = (await getCollection('work'))
 
 <BaseLayout>
 <section class="hero container" data-type="full-bleed">
+
+	<div class="container" data-type="wide">
 	<div class="hero-content">
-		<div class="greeting gradient-text fs-950 ff-accent fw-bold">I ❤️ <span id="text"></span><span id="cursor"></span></div>
+		<div class="greeting gradient-text fs-950 ff-accent fw-bold">Jason Crichton</div>
 		<p class="overview">I am a <span class="fw-bold">creative technology leader</span> with over two decades of marketing / IT experience in the <span class="fw-bold">e-commerce</span> industry who is currently based in Chicago, Illinois.</p>
 	
+	</div>
 	</div>
 </section>
 	
@@ -39,7 +42,7 @@ const projects = (await getCollection('work'))
 		<Skills />
 		<section class="section with-background with-cta">
 			<header>
-				<h3 class="jc-heading-2">Selected Work</h3>
+				<h3 class="heading-1">Selected Work</h3>
 				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
 
@@ -65,7 +68,7 @@ const projects = (await getCollection('work'))
 
 		<section>
 			<header>
-				<h3 class="jc-heading-1">Awards</h3>
+				<h3 class="heading-1">Awards</h3>
 				<p>
 					I have been fortunate to win a number of accolades throughout my career for various digital experiences.
 
@@ -122,17 +125,18 @@ const projects = (await getCollection('work'))
 		--hero-bg: var(--bg-image-subtle-1);
 	}
 
-
 	.hero {
 		height: 70dvh;
 		background: url('./assets/hero-01.jpg') no-repeat;
 		background-position: center bottom -100px;
 		background-size: cover;
+		background-attachment: fixed;
 		/* position: fixed; */
 		display: flex;
 		padding-inline: 1.5rem;
 		background-color: #fff;
 	}
+
 
 	.hero-content {
 		margin-top: 5rem;
@@ -144,7 +148,7 @@ const projects = (await getCollection('work'))
 		/* font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem); */
 		font-family: var(--font-accent);
 		color: var(--gray-0);
-		line-height: 1.5;
+		line-height: 1;
 	}
 
 	.overview {
@@ -201,76 +205,3 @@ const projects = (await getCollection('work'))
 		}
 	}
 </style>
-
-<script>
-// List of sentences
-var _CONTENT = [ 
-	"Design.", 
-	"Code.", 
-	"Leading."
-];
-
-// Current sentence being processed
-var _PART = 0;
-
-// Character number of the current sentence being processed 
-var _PART_INDEX = 0;
-
-// Holds the handle returned from setInterval
-var _INTERVAL_VAL: number | undefined;
-
-// Element that holds the text
-var _ELEMENT = document.querySelector("#text");
-
-// Cursor element 
-var _CURSOR = document.querySelector("#cursor");
-
-// Implements typing effect
-function Type() { 
-	// Get substring with 1 characater added
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX++;
-
-	// If full sentence has been displayed then start to delete the sentence after some time
-	if(text === _CONTENT[_PART]) {
-		// Hide the cursor
-		_CURSOR.style.display = 'none';
-
-		clearInterval(_INTERVAL_VAL);
-		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
-	}
-}
-
-// Implements deleting effect
-function Delete() {
-	// Get substring with 1 characater deleted
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX--;
-
-	// If sentence has been deleted then start to display the next sentence
-	if(text === '') {
-		clearInterval(_INTERVAL_VAL);
-
-		// If current sentence was last then display the first one, else move to the next
-		if(_PART == (_CONTENT.length - 1))
-			_PART = 0;
-		else
-			_PART++;
-		
-		_PART_INDEX = 0;
-
-		// Start to display the next sentence after some time
-		setTimeout(function() {
-			_CURSOR.style.display = 'inline-block';
-			_INTERVAL_VAL = setInterval(Type, 100);
-		}, 200);
-	}
-}
-
-// Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
-</script>

@@ -2,7 +2,6 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
 import ContactCTA from '../../components/ContactCTA.astro';
 import { Icon } from 'astro-icon';
 
@@ -23,46 +22,46 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-	<div class="stack gap-20">
-		<div class="stack gap-15">
+
+		<div class="work-hero">
+			<a class="back-link" href="/work/"><Icon name="mdi:arrow-left" width="1.5em" /> Work</a>
+
+			{entry.data.hero_type == 'video' && 
+			<video id="video" class="vid-big" playsinline="" autoplay="true" loop="true" muted="true" width="100%">
+				<source src={entry.data.hero_video} type="video/mp4">
+			</video>
+			}
+
+			{entry.data.hero_type == 'img' &&
+			<img src={entry.data.hero_img} alt={entry.data.img_alt}>
+			}
+
 			<header>
 				<div class="work-hero__holder">
 					<h1>{entry.data.title}</h1>
-
-					<video id="video" class="vid-big" playsinline="" autoplay="true" loop="true" muted="true" width="100%">
-						<source src="/assets/work/keratin-complex/black-seq-contrast-opt.mp4" type="video/mp4">
-					</video>
-
 				</div>
-				<img src="/assets/work/keratin-complex/color-tubes.png" alt="" style="width: 500px; margin-top: -200px;">
-				<div class="wrapper">
-					<a class="back-link" href="/work/"><Icon name="mdi:arrow-left" width="1.5em" /> Work</a>
-					
+				<div class="container" data-type="wide">
 					
 					<p class="description">{entry.data.description}</p>
 					<div class="details">
 						<div class="tags">
 							{entry.data.tags.map((t) => {t})}
 						</div>
-						
 					</div>
 
 				</div>
 			</header>
-			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
-						<Content />
-					</div>
-				</div>
-			</main>
+
 		</div>
+
+		<main class="container" data-type="wide">
+			<Content />
+		</main>
 		<ContactCTA />
-	</div>
 </BaseLayout>
 
 <style>

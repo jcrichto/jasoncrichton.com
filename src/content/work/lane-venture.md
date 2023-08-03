@@ -3,6 +3,9 @@ title: Lane Venture
 publishDate: 2019-12-01 00:00:00
 img: /assets/work/lane-venture/listing.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+hero_type: img
+hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
+hero_img: /assets/work/lane-venture/hero.jpg
 description: |
   Lane Venture is a premium custom outdoor furniture manufacturer.  The redesign of the site was aimed to be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
 tags:

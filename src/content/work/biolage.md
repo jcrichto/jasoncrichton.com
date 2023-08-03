@@ -2,18 +2,21 @@
 title: Biolage
 publishDate: 2020-03-02 00:00:00
 img: /assets/work/biolage/listing.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Biolage Botanical Redesign
+hero_type: img
+hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
+hero_img: /assets/work/biolage/hero.jpg
 description: |
   We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - UX / Visual Design
+  - Frontend Development
+  - E-mail Design and Development
 ---
 
 ## The Challenge
 
-The Biolage team enlisted Elevate’s expertise to create a separate immersive site experience for their products outside of its parent site, Matrix. They had just rebranded and wanted Elevate to utilize the new botanical-inspired design coupled with creating a simple navigation process for the complex assortment of product collections and products.
+The Biolage marketing team needed a new site experience split off from the Matrix brand. The new site needed to utilize the new botanical-inspired design coupled with creating a simple navigation process for the complex assortment of product collections and products.
 
 ## The Solution
 
@@ -23,7 +26,3 @@ During the visual design phase, we utilized lush botanical-inspired product layd
 
 To help the Client’s existing back-end Demandware team, we developed functional prototypes to showcase our vision for page animations and layouts. During the development phase, we participated in UAT with the Client’s IT team to ensure the finalized designs stayed true to our vision.
 
-“The Elevate team is always a pleasure to work with and they are very skilled at what they do. I absolutely love the designs they did for our new Biolage brand website. They went above and beyond by incorporating unique elements throughout the site which really brought everything to life and they supported us through every step of the site launch.”
-
-Nicole Wallace
-Digital Manager, Matrix

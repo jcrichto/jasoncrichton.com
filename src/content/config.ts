@@ -9,6 +9,9 @@ export const collections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string().optional(),
+			hero_type: z.string(),
+			hero_video: z.string().optional(),
+			hero_img: z.string().optional(),
 		}),
 	}),
 };

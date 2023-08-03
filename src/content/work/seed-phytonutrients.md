@@ -3,6 +3,9 @@ title: Seed Phytonutrients
 publishDate: 2019-10-02 00:00:00
 img: /assets/work/seed/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+hero_type: img
+hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
+hero_img: /assets/work/seed/hero.jpg
 description: |
   We developed brand positioning and design assets for the launch
   of a new colored water product.
