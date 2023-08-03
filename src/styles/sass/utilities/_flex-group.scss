@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
-.#{$prefix} {
-  &flex-group {
+  .flex-group {
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--flex-column-gap, $flex-group-gap);
@@ -9,7 +8,6 @@
     width: fit-content;
   }
 
-  &flex-group.mx-auto {
+  .flex-group.mx-auto {
     justify-content: center;
   }
-}

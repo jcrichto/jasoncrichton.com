@@ -25,28 +25,21 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout>
-
-<section class="hero">
+<section class="hero container" data-type="full-bleed">
 	<div class="hero-content">
-		<div class="greeting gradient-text">I ❤️ <span id="text"></span><span id="cursor"></span></div>
-		<h1 class="overview">I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois.</h1>
+		<div class="greeting gradient-text fs-950 ff-accent fw-bold">I ❤️ <span id="text"></span><span id="cursor"></span></div>
+		<p class="overview">I am a <span class="fw-bold">creative technology leader</span> with over two decades of marketing / IT experience in the <span class="fw-bold">e-commerce</span> industry who is currently based in Chicago, Illinois.</p>
 	
-		<div class="roles">
-			<Icon name="ph:code" width="1.33em" /> Developer
-			<Icon name="ph:pencil-line" size="1.33em" /> UI/UX Design
-			<Icon name="ph:crown-bold" size="1.33em" /> Leader
-			<Icon name="ph:shopping-bag" size="1.33em" /> E-commerce
-		</div>
 	</div>
 </section>
 	
 
-	<div class="container">
+	<div class="container" data-type="wide">
 	<main>
 		<Skills />
 		<section class="section with-background with-cta">
-			<header class="section-header stack gap-2 lg:gap-4">
-				<h3 class="heading-1">Selected Work</h3>
+			<header>
+				<h3 class="jc-heading-2">Selected Work</h3>
 				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
 
@@ -72,7 +65,7 @@ const projects = (await getCollection('work'))
 
 		<section>
 			<header>
-				<h3 class="heading-1">Awards</h3>
+				<h3 class="jc-heading-1">Awards</h3>
 				<p>
 					I have been fortunate to win a number of accolades throughout my career for various digital experiences.
 
@@ -80,7 +73,7 @@ const projects = (await getCollection('work'))
 				</p>
 			</header>
 
-			<section class="awards">
+			<section class="flex-group awards">
 				<Icon name="awards/aiga" />
 				<Icon name="awards/davey-new" />
 				<Icon name="awards/w3" />
@@ -98,9 +91,6 @@ const projects = (await getCollection('work'))
 <style>
 
 	.awards {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		gap: 4rem;
 		padding: 4rem;
 	}
@@ -133,8 +123,6 @@ const projects = (await getCollection('work'))
 	}
 
 
-
-
 	.hero {
 		height: 70dvh;
 		background: url('./assets/hero-01.jpg') no-repeat;
@@ -142,8 +130,8 @@ const projects = (await getCollection('work'))
 		background-size: cover;
 		/* position: fixed; */
 		display: flex;
-		width: 100%;
 		padding-inline: 1.5rem;
+		background-color: #fff;
 	}
 
 	.hero-content {
@@ -153,7 +141,7 @@ const projects = (await getCollection('work'))
 
 
 	.greeting {		
-		font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
+		/* font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem); */
 		font-family: var(--font-accent);
 		color: var(--gray-0);
 		line-height: 1.5;
