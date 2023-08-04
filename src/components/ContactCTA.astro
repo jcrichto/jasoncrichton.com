@@ -3,8 +3,8 @@ import CallToAction from './CallToAction.astro';
 import { Icon } from 'astro-icon';
 ---
 
-<aside class="flex-group container" data-type="narrow">
-	<h2 class="fs-800">Interested in connecting?</h2>
+<aside class="container" data-type="wide">
+	<h2 class="fs-800 ff-accent">Interested <br>in connecting?</h2>
 	<CallToAction href="/contact">
 		Send Me a Message
 		<Icon name="ph:paper-plane-tilt" width="1.2em" />
@@ -17,30 +17,19 @@ import { Icon } from 'astro-icon';
 		flex-direction: column;
 		align-items: center;
 		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+		padding: 3rem 1.5rem;
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
 	}
 
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
-
 	@media (min-width: 50em) {
 		aside {
-			padding: 7.5rem;
+			padding: 5rem 10rem;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
-		}
-
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
 		}
 	}
 </style>

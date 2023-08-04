@@ -6,6 +6,7 @@ img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: video
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: /assets/work/keratin-complex/hero.jpg
+logo: logos/keratin-complex
 description: |
   We developed brand positioning and design assets for the launch
   of a new colored water product.
@@ -14,6 +15,7 @@ tags:
   - UX Design
   - User Testing
   - Prototyping
+bodyclass: nav-theme-light
 ---
 
 <img src="/assets/work/keratin-complex/color-tubes.png" alt="" style="width: 500px; margin-top: -200px;">

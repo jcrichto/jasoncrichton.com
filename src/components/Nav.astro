@@ -101,7 +101,7 @@ const textLinks: { label: string; href: string }[] = [
 		display: flex;
 		justify-content: space-between;
 		gap: 0.5rem;
-		padding: 1.5rem;
+		padding: 1.5rem 0;
 	}
 
 	.site-title {
@@ -120,6 +120,10 @@ const textLinks: { label: string; href: string }[] = [
 
 	body.home .site-title span {
 		display: none;
+	}
+
+	body.nav-theme-light .site-title {
+		color: #fff;
 	}
 
 	.menu-button {

@@ -6,6 +6,7 @@ img_alt: Biolage Botanical Redesign
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: /assets/work/biolage/hero.jpg
+logo: logos/biolage
 description: |
   We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
 tags:

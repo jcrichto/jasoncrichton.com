@@ -12,6 +12,8 @@ export const collections = {
 			hero_type: z.string(),
 			hero_video: z.string().optional(),
 			hero_img: z.string().optional(),
+			bodyclass: z.string().optional(),
+			logo: z.string(),
 		}),
 	}),
 };

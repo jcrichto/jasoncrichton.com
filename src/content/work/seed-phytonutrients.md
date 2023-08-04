@@ -6,6 +6,7 @@ img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: /assets/work/seed/hero.jpg
+logo: logos/seed
 description: |
   We developed brand positioning and design assets for the launch
   of a new colored water product.

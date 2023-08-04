@@ -3,6 +3,8 @@ import { CollectionEntry, getCollection } from 'astro:content';
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
+
+import { sortByDate } from "../../utils/sortByDate.js"
 import { Icon } from 'astro-icon';
 
 interface Props {
@@ -20,12 +22,13 @@ export async function getStaticPaths() {
 	}));
 }
 
+
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description}>
+<BaseLayout title={entry.data.title} description={entry.data.description} bodyclass={entry.data.bodyclass}>
 
 		<div class="work-hero">
 
@@ -47,7 +50,9 @@ const { Content } = await entry.render();
 				<a class="back-link" href="/work/"><Icon name="mdi:arrow-left" width="1.5em" /> Work</a>
 
 				<div class="container" data-type="wide">
-					
+					logo:
+					<Icon name={entry.data.logo} />
+
 					<p class="description">{entry.data.description}</p>
 					<div class="details">
 						<div class="tags">
@@ -71,8 +76,7 @@ const { Content } = await entry.render();
 <style>
 
 .work-hero__holder {
-	background-color: #D2DAE1;
-	min-height: 400px;
+
 }
 
 	header {

@@ -25,11 +25,11 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout bodyclass='home'>
-<section class="hero container" data-type="full-bleed">
+<section class="hero">
 
 	<div class="container" data-type="wide">
 	<div class="hero-content">
-	<div class="greeting gradient-text fs-950 ff-accent fw-bold">Jason <br>Crichton</div>
+	<div class="greeting gradient-text fw-bold ff-accent">Jason <br>Crichton</div>
 	<p class="overview">I am a <span class="fw-bold">creative technology leader</span> with over two decades of marketing / IT experience in the <span class="fw-bold">e-commerce</span> industry who is currently based in Chicago, Illinois.</p>
 
 	</div>
@@ -42,7 +42,7 @@ const projects = (await getCollection('work'))
 		<Skills />
 		<section class="section with-background with-cta">
 			<header>
-				<h3 class="heading-1">Selected Work</h3>
+				<h3 class="heading-1 ff-accent gradient-text">Selected Work</h3>
 				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
 
@@ -58,9 +58,9 @@ const projects = (await getCollection('work'))
 				</Grid>
 			</div>
 
-			<div class="cta">
+			<div class="cta text-center">
 				<CallToAction href="/work/">
-					View All
+					View All Work
 					<Icon name="ph:arrow-right" width="1.2em" />
 				</CallToAction>
 			</div>
@@ -68,7 +68,7 @@ const projects = (await getCollection('work'))
 
 		<section>
 			<header>
-				<h3 class="heading-1">Awards</h3>
+				<h3 class="heading-1 gradient-text">Awards</h3>
 				<p>
 					I have been fortunate to win a number of accolades throughout my career for various digital experiences.
 
@@ -96,6 +96,8 @@ const projects = (await getCollection('work'))
 	.awards {
 		gap: 4rem;
 		padding: 4rem;
+		justify-content: center;
+		width: 100%;
 	}
 
 	.awards svg {
@@ -133,7 +135,6 @@ const projects = (await getCollection('work'))
 		background-attachment: fixed;
 		/* position: fixed; */
 		display: flex;
-		padding-inline: 1.5rem;
 		background-color: #fff;
 	}
 
@@ -144,7 +145,7 @@ const projects = (await getCollection('work'))
 
 
 	.greeting {		
-		font-size: clamp(2.5rem, -0.875rem + 8.333vw, 5rem);
+		font-size: clamp(3.5rem, -0.875rem + 8.333vw, 5rem);
 		font-family: var(--font-accent);
 		color: var(--gray-0);
 		line-height: 1;
@@ -154,6 +155,7 @@ const projects = (await getCollection('work'))
 		font-size: clamp(1rem, -0.875rem + 8.333vw, 1rem);
 		font-weight: 400; 
 		font-family: var(--font-base);
+		margin-top: var(--flow-spacer, 1em);
 	}
 
 	@media (min-width: 60em) {
