@@ -32,3 +32,19 @@ The interactive presentation of product collections allowed a user to build a cu
 
 ## What I Learned
 Elevate tapped into the brand’s century-old heritage for a visually-rich interactive presentation of product collections while giving visitors the ability to create customized information “tear-sheets” to help facilitate in-store orders.
+
+
+<style>
+  body {
+    background-color: #fff;
+  }
+
+  .work-logo svg {
+    fill: #fff;
+  }
+
+  main {
+    background-image: url('/assets/work/lane-venture/lane-texture-lg.jpg');
+    background-repeat: no-repeat;
+  }
+</style>

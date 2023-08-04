@@ -20,11 +20,8 @@ const projects = (await getCollection('work')).sort(
 
 	<HeroContent pageTitle='Work' pageSummary='See my most recent projects below to get an idea of my past experience.' />
 
-	<main class="container" data-type="wide">
-
-
-
-		<Grid variant="offset">
+	<main class="container content" data-type="wide">
+		<Grid>
 			{
 				projects.map((project) => (
 					<li>
@@ -37,3 +34,9 @@ const projects = (await getCollection('work')).sort(
 	<ContactCTA />
 	
 </BaseLayout>
+
+<style>
+	.content {
+		margin: 5rem auto;
+	}
+</style>

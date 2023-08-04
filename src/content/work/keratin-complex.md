@@ -14,11 +14,13 @@ tags:
   - Visual Design
   - UX Design
   - User Testing
-  - Prototyping
+  - Technical Strategy
+  - Shopify Plus
 bodyclass: nav-theme-light
 ---
 
-<img src="/assets/work/keratin-complex/color-tubes.png" alt="" style="width: 500px; margin-top: -200px;">
+
+<img src="/assets/work/keratin-complex/color-tubes.png" alt="" style="width: 500px;">
 
 ## The Challenge
 An antiquated technology platform, the inability to manage marketing content and declining revenues found our Client needing results, and quickly. Elevate was tasked with identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e‑commerce technology stack in the process. 
@@ -27,4 +29,38 @@ An antiquated technology platform, the inability to manage marketing content and
 
 The end result was a record double-digit sales increase within days of launch.
 
+## Technical Architecture
+
 <img src="/assets/work/keratin-complex/system-architecture.svg" />
+
+
+<style>
+body {
+  background-color: #fff;
+}
+
+.work-logo svg {
+  fill: #fff;
+  top: -40px;
+  position: relative;
+}
+
+main:after {
+
+
+  content: " ";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  z-index: 10;
+  background-image: url('/assets/work/keratin-complex/line-bars.png');
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: visible;
+
+}
+</style>

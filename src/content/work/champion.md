@@ -17,23 +17,43 @@ tags:
   - Prototyping
 ---
 
-How does one motivate young, trend-setting consumers? Design a brand experience that encourages exploration of an exclusive fashion collection on the devices they use most.
 
-Exclusivity and self-expression motivate the streetwear consumer. They connect with authentic brands that offer unique styles that are not mass produced. This valuable feedback informed design iterations and the end result was an experience that reflected the Champion LIFE brand and resonated with this millennial consumer.
+<div class="flex-group">
+<div class="flow">
+<p>Exclusivity and self-expression motivate the streetwear consumer. They connect with authentic brands that offer unique styles that are not mass produced. This valuable feedback informed design iterations and the end result was an experience that reflected the Champion LIFE brand and resonated with this millennial consumer.</p>
 
-Elevate’s design team used interactive prototypes and tested them in the field with real users to drive the most successful design solution. The shoppable lookbook made up of time-released collections resulted in several product lines selling out in days after release.
+<p>Interactive prototypes were built and tested in the field with real users to drive the most successful design solution. The shoppable lookbook made up of time-released collections resulted in several product lines selling out days after release.</p>
+</div>
+
+<div style="width: 40%">
+<img src="/assets/work/champion-life/champion-1@2x.jpg">
+</div>
+
+</div>
 
 
 
-{%- import { next } from '@astrojs/renderer' -%}
+<style>
+body {
+  background-color: #333;
+  color: #fff;
+}
 
-{%- set nextPost = next(posts, postIndex, '/posts/*.md') -%}
+main .container {
+  position: relative;
+}
 
-{# Render the link to the next post if it exists #}
-{# Otherwise, show a message indicating there is no next post #}
+main .container:after {
+  content: url('/assets/work/champion-life/life-tag.png');
+  position: absolute;
+  right: 20px;
+  top: -100px;
+  z-index: 10;
+}
 
-{%- if nextPost -%}
-  <a href="{{ nextPost.url }}">Next Post: {{ nextPost.title }}</a>
-{%- else -%}
-  <p>No next post available.</p>
-{%- endif -%}
+@media (min-width: 50em) {
+  header .container:after {
+    
+  }
+}
+</style>
