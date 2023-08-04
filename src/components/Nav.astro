@@ -16,7 +16,7 @@ const textLinks: { label: string; href: string }[] = [
 	<div class="container" data-type="wide">
 	<div class="menu-header">
 		<a href="/" class="site-title fw-bold">
-			<Icon name="ph:terminal-window" /> <span>Jason <br>Crichton</span>
+			<svg viewBox="0 0 208 176" fill="currentColor"><path d="M104 88a8 8 0 0 1-3 6.25l-40 32c-3.45 2.76-8.49 2.2-11.25-1.25s-2.2-8.49 1.25-11.25L83.19 88 51 62.25c-3.45-2.76-4.01-7.8-1.25-11.25s7.8-4.01 11.25-1.25l40 32a8 8 0 0 1 3 6.25Zm104-72v144c0 8.84-7.16 16-16 16H16c-8.84 0-16-7.16-16-16V16C0 7.16 7.16 0 16 0h176c8.84 0 16 7.16 16 16Zm-16 144V16H16v144h176Z"/><path class="term-cursor" d="M112 112c-4.42 0-8 3.58-8 8s3.58 8 8 8h40c4.42 0 8-3.58 8-8s-3.58-8-8-8"/></svg> <span>Jason <br>Crichton</span>
 		</a>
 		<menu-button>
 			<template>
@@ -101,7 +101,8 @@ const textLinks: { label: string; href: string }[] = [
 		display: flex;
 		justify-content: space-between;
 		gap: 0.5rem;
-		padding: 1.5rem 0;
+		padding: 1rem 0;
+		/* padding: 0; */
 	}
 
 	.site-title {
@@ -115,7 +116,7 @@ const textLinks: { label: string; href: string }[] = [
 	}
 
 	.site-title svg {
-		width: 5rem;
+		width: 3rem;
 	}
 
 	body.home .site-title span {
@@ -213,8 +214,13 @@ const textLinks: { label: string; href: string }[] = [
 			padding: 0;
 		}
 
+
 		.site-title {
 			font-size: 1.5rem;
+		}
+
+		.site-title svg {
+			width: 4rem;
 		}
 
 		#menu-content {
@@ -274,5 +280,17 @@ const textLinks: { label: string; href: string }[] = [
 		.link.active {
 			color: SelectedItem;
 		}
+	}
+
+
+
+	.term-cursor {
+		animation: cursor-blink 0.8s infinite;
+	}
+	
+	@keyframes cursor-blink {
+		0% {opacity: 0}
+		50% {opacity: 1}
+		100% {opacity: 0}
 	}
 </style>

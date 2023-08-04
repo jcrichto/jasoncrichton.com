@@ -4,7 +4,7 @@ publishDate: 2019-10-02 00:00:00
 img: /assets/work/keratin-complex/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: video
-hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
+hero_video: /assets/work/keratin-complex/black-seq-contrast.mp4
 hero_img: /assets/work/keratin-complex/hero.jpg
 logo: logos/keratin-complex
 description: |

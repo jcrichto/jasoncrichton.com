@@ -71,8 +71,8 @@ body {
 
 .heart {
     position: absolute;
-    right: -10px;
-    top: -10px;
+    right: 0;
+    top: 0;
     width: 100px;
     height: 100px;
     background: url("/assets/work/biolage/heart-sprite.png") no-repeat;
@@ -80,7 +80,7 @@ body {
     cursor: pointer;
     transition: background-position 1s steps(28);
     transition-duration: 0s;
-    transform: scale(2.75);
+	/* transform: scale(0.75); */
 }
 
 .heart:hover {

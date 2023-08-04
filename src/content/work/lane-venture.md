@@ -46,5 +46,6 @@ Elevate tapped into the brand’s century-old heritage for a visually-rich inter
   main {
     background-image: url('/assets/work/lane-venture/lane-texture-lg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>
