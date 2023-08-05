@@ -41,26 +41,30 @@ body {
 
 .work-logo svg {
   fill: #fff;
-  top: -40px;
+  /* top: -40px; */
   position: relative;
 }
 
-main:after {
+.work-logo {
+  top: -75px;
+}
 
-
-  content: " ";
-  position: absolute;
-  top: -50px;
-  left: 0;
+.work-hero-cover {
+  background-image: url('/assets/work/keratin-complex/line-bars.png');
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  max-height: 100px;
-  z-index: 10;
-  background-image: url('/assets/work/keratin-complex/line-bars.png');
-  background-size: 100% auto;
-  background-position: top;
-  background-repeat: no-repeat;
-  overflow: visible;
+  position: absolute;
 
 }
+
+
+@media (min-width: 50em) {
+  .work-logo {
+    top: -140px;
+  }
+}
+
 </style>

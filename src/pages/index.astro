@@ -132,7 +132,7 @@ const projects = (await getCollection('work'))
 		background: url('./assets/hero-01.jpg') no-repeat;
 		background-position: center bottom -100px;
 		background-size: cover;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		/* position: fixed; */
 		display: flex;
 		background-color: #fff;
@@ -162,6 +162,7 @@ const projects = (await getCollection('work'))
 		.hero {
 			background-position: bottom right -100px;
 			background-size: contain;
+			background-attachment: fixed;
 		}
 
 		.hero-content {

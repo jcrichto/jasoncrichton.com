@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroContent from '../components/HeroContent.astro';
+import { Icon } from 'astro-icon';
 ---
 
 <BaseLayout
@@ -13,7 +14,7 @@ import HeroContent from '../components/HeroContent.astro';
   <main class="container flow" data-type="narrow">
 
 
-    <section>
+    <section class="content-contact">
       <form
         hidden
         name="contact"
@@ -42,7 +43,7 @@ import HeroContent from '../components/HeroContent.astro';
 			messageDirty = true;
 			submitMessage(name, email, message);"
 			id="contact"
-			class="form-contact"
+			class="form-contact flow"
       >
         <p hidden>
           <label>ignore: <input name="bot-field" /></label>
@@ -108,8 +109,9 @@ import HeroContent from '../components/HeroContent.astro';
 		</div>
 
         <div data-netlify-recaptcha="true"></div>
+        
 
-        <p><button type="submit">Send</button></p>
+        <p><button type="submit" class="button">Send <Icon name="ph:paper-plane-right" width="1.2em" /></button></p>
       </form>
     </section>
   </main>
@@ -155,6 +157,11 @@ function isEmail(value) {
 </script>
 
 <style>
+
+.form-contact {
+  margin-top: 2rem;
+}
+
   .form-contact {
     display: grid;
   }
@@ -181,5 +188,9 @@ textarea {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   border-radius: 1rem;
+}
+
+label {
+  padding: 0 0 .5rem .5rem;
 }
 </style>
