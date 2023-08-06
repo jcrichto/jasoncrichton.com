@@ -94,7 +94,7 @@ const textLinks: { label: string; href: string }[] = [
 
 			// Hide menu button for large screens.
 			const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
-				setStyles(!e.matches);
+				setStyles(false);
 				btn.hidden = e.matches;
 			};
 			const mediaQueries = window.matchMedia('(min-width: 50em)');
@@ -145,9 +145,6 @@ const textLinks: { label: string; href: string }[] = [
 		touch-action: manipulation;
 	}
 
-
-
-
 	nav.mobile .site-title {
 		color: #000 !important;
 	}
@@ -157,7 +154,6 @@ const textLinks: { label: string; href: string }[] = [
 		justify-content: space-between;
 		gap: 0.5rem;
 		padding: 1rem 0;
-		/* padding: 0; */
 	}
 
 	.site-title {
@@ -250,16 +246,14 @@ const textLinks: { label: string; href: string }[] = [
 	}
 
 	.menu-footer {
-		--icon-size: var(--text-xl);
+		/* --icon-size: var(--text-xl); */
 		--icon-padding: 0.5rem;
 
 		display: flex;
 		justify-content: space-between;
 		gap: 0.75rem;
 		padding: 1.5rem 2rem 1.5rem 1.5rem;
-		background-color: var(--gray-999);
-		border-radius: 0 0 0.75rem 0.75rem;
-		box-shadow: var(--shadow-lg);
+		/* box-shadow: var(--shadow-lg); */
 	}
 
 
@@ -292,7 +286,7 @@ const textLinks: { label: string; href: string }[] = [
 		.nav-items {
 			position: relative;
 			flex-direction: row;
-			font-size: var(--text-sm);
+			font-size: var(--fs-300);
 			border-radius: 999rem;
 			border: 0;
 			padding: 0.5rem 0.5625rem;
@@ -313,6 +307,7 @@ const textLinks: { label: string; href: string }[] = [
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
 			transition: color var(--theme-transition), background-color var(--theme-transition);
+			font-size: var(--fs-500);
 		}
 
 		.link:hover,

@@ -30,7 +30,7 @@ const projects = (await getCollection('work'))
 	<div class="container" data-type="wide">
 	<div class="hero-content">
 	<div class="greeting gradient-text fw-bold ff-accent">Jason <br>Crichton</div>
-	<p class="overview">I am a <span class="fw-bold">creative technology leader</span> with over two decades of marketing / IT experience in the <span class="fw-bold">e-commerce</span> industry who is currently based in Chicago, Illinois.</p>
+	<p class="overview">I am a <span class="fw-bold">creative technology leader</span> with over two decades of marketing / IT experience in the <span class="fw-bold nowrap">e-commerce</span> industry who is currently based in Chicago, Illinois.</p>
 
 	</div>
 	</div>
@@ -131,7 +131,7 @@ const projects = (await getCollection('work'))
 		height: 80vh;
 		background: url('./assets/hero-01.jpg') no-repeat;
 		background-position: center bottom -100px;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: scroll;
 		/* position: fixed; */
 		display: flex;
@@ -140,12 +140,12 @@ const projects = (await getCollection('work'))
 
 
 	.hero-content {
-		margin-top: 10rem;
+		margin-top: 7rem;
 	}
 
 
 	.greeting {		
-		font-size: clamp(3.5rem, -0.875rem + 8.333vw, 5rem);
+		font-size: clamp(2.5rem, -0.875rem + 8.333vw, 5rem);
 		font-family: var(--font-accent);
 		color: var(--gray-0);
 		line-height: 1;
