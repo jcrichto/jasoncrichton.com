@@ -72,3 +72,31 @@
     white-space: nowrap;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+
+.work-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+}
+
+.work-content {
+	// width: 60%;
+	flex: 1;
+}
+
+.work-highlight {
+	// width: 40%;
+	flex: 1;
+}

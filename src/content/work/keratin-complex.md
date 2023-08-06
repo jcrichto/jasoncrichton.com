@@ -1,5 +1,6 @@
 ---
 title: Keratin Complex
+projectType: Site Redesign
 publishDate: 2019-10-02 00:00:00
 img: /assets/work/keratin-complex/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
@@ -20,7 +21,8 @@ bodyclass: nav-theme-light
 ---
 
 
-<img src="/assets/work/keratin-complex/color-tubes.png" alt="" style="width: 500px;">
+<div class="work-wrapper">
+<div class="work-content flow">
 
 ## The Challenge
 An antiquated technology platform, the inability to manage marketing content and declining revenues found our Client needing results, and quickly. Elevate was tasked with identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e‑commerce technology stack in the process. 
@@ -33,6 +35,14 @@ The end result was a record double-digit sales increase within days of launch.
 
 <img src="/assets/work/keratin-complex/system-architecture.svg" />
 
+</div>
+
+<div class="work-highlight">
+<img src="/assets/work/keratin-complex/screen-2.jpg" alt="">
+<img src="/assets/work/keratin-complex/color-tubes.png" alt="">
+</div>
+
+</div>
 
 <style>
 body {

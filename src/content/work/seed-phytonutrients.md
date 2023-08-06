@@ -1,5 +1,6 @@
 ---
 title: Seed Phytonutrients
+projectType: Site Redesign
 publishDate: 2019-10-02 00:00:00
 img: /assets/work/seed/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.

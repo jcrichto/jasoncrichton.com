@@ -1,5 +1,6 @@
 ---
 title: Biolage
+projectType: Site Redesign
 publishDate: 2020-03-02 00:00:00
 img: /assets/work/biolage/listing.jpg
 img_alt: Biolage Botanical Redesign
@@ -55,6 +56,44 @@ To help the Client’s existing back-end Demandware team, we developed functiona
   </div>
 </div>
 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+<script>
+// Function to add the class when the element comes into view
+// function addClassOnScroll(entries, observer) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('in-view');
+//       observer.unobserve(entry.target); // Unobserve the target after adding the class
+//     }
+//   });
+// }
+
+function toggleClassOnScroll(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+}
+
+// Create the observer
+const observer = new IntersectionObserver(toggleClassOnScroll, {
+  rootMargin: '0px', // Set the margin around the viewport, e.g., '10px 0px -50px 0px'
+  threshold: 0.5 // Set the percentage of the element that needs to be visible to trigger the callback
+});
+
+// Get the element to watch
+const elementToWatch = document.querySelector('.tile-sustainable__cards');
+
+// Start observing the element
+observer.observe(elementToWatch);
+</script>
 
 <style>
 
@@ -155,8 +194,8 @@ body {
 	 font-size: 18px;
 	 color: #323d47;
 	 transition: all 0.5s;
-	 cursor: pointer;
 	 display: flex;
+	user-select: none;
 	 flex-direction: column;
 	 position: relative;
 	 margin: 2%;
@@ -174,24 +213,22 @@ body {
 	 opacity: 0;
 	 transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
- .tile-sustainable__card:hover:after {
-	 opacity: 1;
-}
+
  .tile-sustainable__card img {
 	 width: 100%;
 	 height: auto;
 	 margin-bottom: 10px;
 }
- .tile-sustainable__card--formulation.in-view {
+ .tile-sustainable__cards.in-view .tile-sustainable__card--formulation {
 	 animation: swing ease-in-out 5s;
 }
- .tile-sustainable__card--manufacturing.in-view {
+ .tile-sustainable__cards.in-view .tile-sustainable__card--manufacturing {
 	 animation: swing ease-in-out 7s;
 }
- .tile-sustainable__card--plastic.in-view {
+ .tile-sustainable__cards.in-view .tile-sustainable__card--plastic {
 	 animation: swing ease-in-out 5s;
 }
- .tile-sustainable__card--giving.in-view {
+ .tile-sustainable__cards.in-view .tile-sustainable__card--giving {
 	 animation: swing ease-in-out 8s;
 }
  @keyframes swing {

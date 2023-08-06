@@ -22,6 +22,7 @@ const textLinks: { label: string; href: string }[] = [
 			<template>
 				<button class="menu-button" aria-expanded="false">
 					<span class="sr-only">Menu</span>
+					<Icon name="ph:list-light" width="1em" /> 
 				</button>
 			</template>
 		</menu-button>
@@ -243,6 +244,8 @@ const textLinks: { label: string; href: string }[] = [
 
 	.link.active {
 		color: var(--gray-0);
+		background: none;
+		font-weight: 700;
 	}
 
 	.menu-footer {
@@ -318,7 +321,7 @@ const textLinks: { label: string; href: string }[] = [
 
 		.link.active {
 			color: var(--accent-text-over);
-			/* background-color: var(--accent-regular); */
+			background-color: var(--accent-regular);
 		}
 
 		.menu-footer {
