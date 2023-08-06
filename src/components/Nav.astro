@@ -12,7 +12,7 @@ const textLinks: { label: string; href: string }[] = [
 
 ---
 
-<nav>
+<nav id="mainnav">
 	<div class="container" data-type="wide">
 	<div class="menu-header">
 		<a href="/" class="site-title fw-bold">
@@ -63,14 +63,30 @@ const textLinks: { label: string; href: string }[] = [
 			this.appendChild(this.querySelector('template')!.content.cloneNode(true));
 			const btn = this.querySelector('button')!;
 
+
+			const mainnav = document.getElementById("mainnav")!;
+
+			// create overlay div
+			const overlayDiv = document.createElement('div');
+			overlayDiv.className = 'overlay';
+			document.body.appendChild(overlayDiv);
+
 			// Hide menu (shown by default to support no-JS browsers).
 			const menu = document.getElementById('menu-content')!;
 			menu.hidden = true;
+			overlayDiv.hidden = true;
 
 			/** Set whether the menu is currently expanded or collapsed. */
 			const setExpanded = (expand: boolean) => {
 				btn.setAttribute('aria-expanded', expand ? 'true' : 'false');
+				setStyles(expand);
 				menu.hidden = !expand;
+				overlayDiv.hidden = !expand;
+			};
+
+			const setStyles = (expand: boolean) => {
+				mainnav.classList.toggle("mobile", expand);
+				overlayDiv.classList.toggle("open", expand);
 			};
 
 			// Toggle menu visibility when the menu button is clicked.
@@ -78,16 +94,43 @@ const textLinks: { label: string; href: string }[] = [
 
 			// Hide menu button for large screens.
 			const handleViewports = (e: MediaQueryList | MediaQueryListEvent) => {
-				setExpanded(e.matches);
+				setStyles(!e.matches);
 				btn.hidden = e.matches;
 			};
 			const mediaQueries = window.matchMedia('(min-width: 50em)');
 			handleViewports(mediaQueries);
 			mediaQueries.addEventListener('change', handleViewports);
+
+			// Check if the clicked element is outside the menu
+			document.addEventListener('click', function(event) {
+				var target = event.target;
+				
+				if (!mainnav.contains(target) && !menu.hidden) {
+					// Close the menu
+					// Add your code here to close the menu
+					setExpanded(menu.hidden)
+				}
+			});
 		}
 	}
 	customElements.define('menu-button', MenuButton);
 </script>
+
+<style is:global>
+.overlay.open {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+	z-index: 100; /* Ensure the overlay is above other elements */
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px)
+}
+</style>
+
 
 <style>
 	nav {
@@ -95,6 +138,18 @@ const textLinks: { label: string; href: string }[] = [
 		position: absolute;
 		font-family: var(--font-accent);
 		width: 100%;
+	}
+
+	nav.mobile {
+		background-color: #fff;
+		touch-action: manipulation;
+	}
+
+
+
+
+	nav.mobile .site-title {
+		color: #000 !important;
 	}
 
 	.menu-header {
@@ -143,6 +198,11 @@ const textLinks: { label: string; href: string }[] = [
 		color: var(--gray-0);
 		background: linear-gradient(180deg, var(--gray-600), transparent),
 			radial-gradient(var(--gray-900), var(--gray-800) 150%);
+		touch-action: manipulation;
+	}
+
+	.menu-button button {
+		touch-action: manipulation;
 	}
 
 	.menu-button[hidden] {
@@ -175,12 +235,14 @@ const textLinks: { label: string; href: string }[] = [
 		padding: 2rem;
 		background-color: var(--gray-999);
 		border-bottom: 1px solid var(--gray-800);
+		text-align: center;
 	}
 
 	.link {
 		display: inline-block;
 		color: var(--gray-300);
 		text-decoration: none;
+		font-size: var(--fs-800);
 	}
 
 	.link.active {

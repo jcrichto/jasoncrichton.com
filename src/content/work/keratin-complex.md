@@ -41,8 +41,6 @@ body {
 
 .work-logo svg {
   fill: #fff;
-  /* top: -40px; */
-  position: relative;
 }
 
 .work-logo {
@@ -57,7 +55,10 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+}
 
+.work-hero img, .work-hero video {
+  height: 70vh;
 }
 
 
@@ -65,6 +66,10 @@ body {
   .work-logo {
     top: -140px;
   }
+
+  .work-hero img, .work-hero video {
+		height: 90dvh;
+	}
 }
 
 </style>
