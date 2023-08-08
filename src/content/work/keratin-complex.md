@@ -25,21 +25,22 @@ bodyclass: nav-theme-light
 <div class="work-content flow">
 
 ## The Challenge
-An antiquated technology platform, the inability to manage marketing content and declining revenues found our Client needing results, and quickly. Elevate was tasked with identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e‑commerce technology stack in the process. 
+I was tasked with identifying key opportunities to improve the overall site experience to drive revenue while migrating from a legacy Magento platform to a more modern e‑commerce technology stack that leaned heavily on Shopify Plus APIs. 
 
-57% increase month-over-month in site revenue
+## The Results
+**57% increase** month-over-month in site revenue
 
 The end result was a record double-digit sales increase within days of launch.
 
 ## Technical Architecture
+Going through an extensive discovery session with the client, the requirements were heavy on the marketing side. Because of these requirements, part of my effort was to architect out a CMS that would provide all the marketing requirements but allow for a tightly integrated e-commerce experience. The solution was the lean on Shopify Plus APIs to handle the cart and checkout for the site.  The site had a B2C and B2B component for the wholesale side of the business.  
 
-<img src="/assets/work/keratin-complex/system-architecture.svg" />
+<img src="/assets/work/keratin-complex/system-architecture.png" />
 
 </div>
 
 <div class="work-highlight">
 <img src="/assets/work/keratin-complex/screen-2.jpg" alt="">
-<img src="/assets/work/keratin-complex/color-tubes.png" alt="">
 </div>
 
 </div>

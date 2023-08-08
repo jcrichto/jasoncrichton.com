@@ -1,5 +1,5 @@
 ---
-title: Seed Phytonutrients
+title: L'Oreal - Seed Phytonutrients
 projectType: Site Redesign
 publishDate: 2019-10-02 00:00:00
 img: /assets/work/seed/listing.jpg

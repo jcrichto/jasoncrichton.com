@@ -1,5 +1,5 @@
 ---
-title: Lane Venture
+title: Bassett Furniture - Lane Venture
 projectType: Site Redesign
 publishDate: 2019-12-01 00:00:00
 img: /assets/work/lane-venture/listing.jpg
