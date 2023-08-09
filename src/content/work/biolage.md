@@ -1,5 +1,5 @@
 ---
-title: L'Oreal - Biolage
+title: L'Oréal - Biolage
 projectType: Site Redesign
 publishDate: 2020-03-02 00:00:00
 img: /assets/work/biolage/listing.jpg
@@ -19,23 +19,29 @@ tags:
 
 <img src="/assets/work/biolage/large-leaf.png" class="large-leaf">
 
+
+<div class="work-wrapper">
+<div class="work-content flow">
+
+
 ## The Challenge
+The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired "organic" design and move away from the typical boxy storefront.
 
-The Biolage marketing team needed a new site experience split off from the Matrix brand. The new site needed to utilize the new botanical-inspired design coupled with creating a simple navigation process for the complex assortment of product collections and products.
-
-<div class="heart-container">
-<div class="heart"></div>
-</div>
+Technically, the new design and UX needed to support the IT team's storefront reference architecture (SFRA) which was a L'Oréal library of components within their Salesforce Commerce instance used across a number of their brands.
 
 ## The Solution
+Keeping the consumer's experience in mind, we developed wireframes that provided a clear path to drive purchases. We also incorporated an interactive hair consultation tool, offering personalized product recommendations based on hair type. Additionally, Elevate designed trigger and utility emails for Account Registration, Reset Password, Hair Quiz Results, Blog Highlights, and Newsletter Sign-Up to maintain brand consistency.
 
-With the consumer’s experience in mind, we created wireframes to ensure a clear and thorough path to drive purchases. This also included an interactive hair consultation tool that provided tailored product recommendations for a consumer’s hair type. To keep the whole experience on brand, Elevate also designed trigger and utility emails for Account Registration, Reset Password, Hair Quiz Results, Blog Highlights & Newsletter Sign-Up. 
+To assist the client's existing development partner, I created functional UI prototypes that showcased the vision for page animations and layouts. During the development phase, we collaborated with the client's IT team for User Acceptance Testing (UAT) to ensure the final designs aligned with the intended vision.
 
-<img src="/assets/work/biolage/tile-sustainable-grass-logo.jpg">
+The first iteration that was launched served as a minimum viable product for other L'Oréal brands, demonstrating the how to really push the library of components through the use of responsive organic shapes.
 
-During the visual design phase, we utilized lush botanical-inspired product laydowns, rich textured light wooden backgrounds paired with glowing fresh-faced models to draw the consumer in. To take it one step further and bring the design elements to life, we incorporated micro-animations and animated page scrolling to keep the consumer engaged.
+## What I Learned
 
-To help the Client’s existing back-end Demandware team, we developed functional prototypes to showcase our vision for page animations and layouts. During the development phase, we participated in UAT with the Client’s IT team to ensure the finalized designs stayed true to our vision.
+Achieving effective communication to the development partner required finding a balance between defining unique, one-off elements and ensuring scalability for reusable components across different devices. Building out fully working UI prototypes is an exteremely effective way to communite responsive and animation challenges.
+
+Defining requirements for hero images also posed interesting challenges, requiring extensive exploration with various imagery to establish safe zones on a template for the merchandising team. By thinking creatively and incorporating micro animations, we successfully delivered a project that all teams could take pride in.
+
 
 <div class="tile-sustainable__cards">
   <div class="tile-sustainable__card tile-sustainable__card--formulation animation-element in-view">
@@ -57,6 +63,22 @@ To help the Client’s existing back-end Demandware team, we developed functiona
 </div>
 
 
+
+<div class="heart-container">
+<div class="heart"></div>
+</div>
+
+
+
+
+
+
+<div class="work-highlight">
+<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt="">
+</div>
+
+</div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
