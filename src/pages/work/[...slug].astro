@@ -1,159 +1,172 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content';
+import { CollectionEntry, getCollection } from "astro:content";
 
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ContactCTA from '../../components/ContactCTA.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactCTA from "../../components/ContactCTA.astro";
 
-import { Icon } from 'astro-icon';
+import { sortByDate } from "../../utils/sortByDate.js";
+
+import { Icon } from "astro-icon";
 
 interface Props {
-	entry: CollectionEntry<'work'>;
+  entry: CollectionEntry<"work">;
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-	const work = await getCollection('work');
-	return work.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
-	}));
-}
+  const work = await getCollection("work");
 
+  return work.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description} bodyclass={entry.data.bodyclass}>
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  bodyclass={entry.data.bodyclass}
+>
+  <section class="work-hero">
+    <div class="work-hero-cover"></div>
+    {
+      entry.data.hero_type == "video" && (
+        <video
+          id="video"
+          class="vid-big"
+          playsinline=""
+          autoplay="true"
+          loop="true"
+          muted="true"
+          width="100%"
+        >
+          <source src={entry.data.hero_video} type="video/mp4" />
+        </video>
+      )
+    }
 
-	<section class="work-hero">
-		<div class="work-hero-cover"></div>
-		{entry.data.hero_type == 'video' && 
-		<video id="video" class="vid-big" playsinline="" autoplay="true" loop="true" muted="true" width="100%">
-			<source src={entry.data.hero_video} type="video/mp4">
-		</video>
-		}
+    {
+      entry.data.hero_type == "img" && (
+        <img src={entry.data.hero_img} alt={entry.data.img_alt} />
+      )
+    }
+  </section>
 
-		{entry.data.hero_type == 'img' &&
-		<img src={entry.data.hero_img} alt={entry.data.img_alt}>
-		}
-		
-	</section>
+  <main>
+    <section class="work-content">
+      <div class="container" data-type="wide">
+        <div class="work-logo">
+          <Icon name={entry.data.logo} />
+        </div>
 
-	<main>
-	<section class="work-content">
-	<div class="container" data-type="wide">
-		<div class="work-logo">
-			<Icon name={entry.data.logo} />
-		</div>
-		
-		<h1>{entry.data.projectType}</h1>
-		
-		<div class="details">
-			<div class="tags">
-				<ul>
-					{entry.data.tags.map((t) => <li>{t}</li>)}
-				</ul>
-			</div>
-		</div>
+        <h1>{entry.data.projectType}</h1>
 
-		
+        <div class="details">
+          <div class="tags">
+            <ul>
+              {entry.data.tags.map((t) => <li>{t}</li>)}
+            </ul>
+          </div>
+        </div>
 
-	<Content />
+        <Content />
+      </div>
+    </section>
+  </main>
 
-	</div>
-	</section>
-	</main>
-
-	<section class="work-related container">
-		<a class="back-link" href="/work/"><Icon name="mdi:arrow-left" width="1.5em" /> Work</a>	
-	</section>
-	<ContactCTA />
+  <section class="work-related container">
+    <a class="back-link" href="/work/"
+      ><Icon name="mdi:arrow-left" width="1.5em" /> Work</a
+    >
+  </section>
+  <ContactCTA />
 </BaseLayout>
 
-
 <style is:global>
-	.work-logo {
-		max-width: 200px;
-		position: relative;
-		top: -75px;
-		z-index: 10;
-	}
+  .work-logo {
+    max-width: 200px;
+    position: relative;
+    top: -75px;
+    z-index: 10;
+  }
 
+  .work-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
 
-	.work-wrapper {
-		display: flex;
-		flex-direction: row;
-		gap: 4rem;
-	}
+  .work-content {
+    flex: 1;
+  }
 
-	.work-content {
-		flex: 1;
-	}
+  body.theme-dark .work-content {
+	color: #fff;
+  }
 
-	.work-highlight {
-		flex: 1;
-	}
+  .work-highlight {
+    flex: 1;
+  }
 
-	.work-col {
-		display: flex;
-		flex-direction: row;
-		gap: 5rem;
-	}
-
-
+  .work-col {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
 </style>
 
 <style>
-header {
-	padding-bottom: 2.5rem;
-}
+  header {
+    padding-bottom: 2.5rem;
+  }
 
-main {
-	position: relative;
-}
+  main {
+    position: relative;
+  }
 
+  .work-hero img,
+  .work-hero video {
+    object-fit: cover;
+    height: 60vh;
+  }
 
-.work-hero img, .work-hero video {
-	object-fit: cover;
-	height: 60vh;
-}
+  .work-hero {
+    position: relative;
+    z-index: 5;
+  }
 
-.work-hero {
-	position: relative;
-	z-index: 5;
-}
+  .tags {
+    margin: 1rem 0 3rem;
+  }
 
-.tags {
-	margin: 1rem 0 3rem;
-}
+  .tags ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+  }
 
-.tags ul {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-	gap: .75rem;
-}
+  .tags li {
+    border: 1px solid var(--gray-600);
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    border-radius: 999rem;
+  }
 
-.tags li {
-	border: 1px solid var(--gray-600);
-	padding: .5rem 1rem;
-	font-size: .75rem;
-	border-radius: 999rem;
-}
-
-
-
-@media (min-width: 50em) {
-	.work-hero img, .work-hero video {
-		object-fit: cover;
-		width: 100%;
-		height: 85vh;
-	}
-}
+  @media (min-width: 50em) {
+    .work-hero img,
+    .work-hero video {
+      object-fit: cover;
+      width: 100%;
+      height: 85vh;
+    }
+  }
 </style>

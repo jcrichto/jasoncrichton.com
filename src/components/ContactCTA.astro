@@ -22,12 +22,26 @@ import { Icon } from 'astro-icon';
 		padding: 3rem 1.5rem;
 	}
 
-	@media (min-width: 50em) {
+	h2 {
+		text-align: center;
+	}
+
+	@media (min-width: 60em) {
+		h2 {text-align: left;}
+
 		aside {
 			padding: 5rem 10rem;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
+	}
+
+	body.theme-dark h2 {
+		color: #fff;
+	}
+
+	body.theme-dark aside {
+		border-color: #666;
 	}
 </style>

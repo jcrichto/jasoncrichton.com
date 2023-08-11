@@ -19,10 +19,18 @@ const currentYear = new Date().getFullYear();
 		text-align: center;
 	}
 
+	body.theme-dark {
+		color: #fff;
+	}
+
 	footer a {
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
 		transition: text-decoration-color var(--theme-transition);
+	}
+
+	body.theme-dark footer a {
+		color: #fff;
 	}
 
 	footer a:hover,

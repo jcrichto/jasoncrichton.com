@@ -8,6 +8,7 @@ hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: /assets/work/champion-life/hero.jpg
 logo: logos/champion
+bodyclass: theme-dark
 description: |
   We developed brand positioning and design assets for the launch
   of a new colored water product.
@@ -39,7 +40,6 @@ tags:
 <style>
 body {
   background-color: #333;
-  color: #fff;
 }
 
 main .container {
@@ -47,17 +47,9 @@ main .container {
 }
 
 main .container:after {
-  /* content: url('/assets/work/champion-life/life-tag.png');
-  position: absolute;
-  right: 0;
-  top: -100px;
-  z-index: 10; */
-
-  content: ""; /* Required for the pseudo-element to render */
+  content: ""; 
   display: block;
-  /* width: 418px;  */
   width: clamp(218px, 40%, 418px);
-  /* height: 136px; */
   height: clamp(71px, 40%, 136px);
   position: absolute;
   top: -100px;
@@ -68,14 +60,7 @@ main .container:after {
   z-index: 8
 }
 
-.work-content {
-  color: #fff;
-}
-
 @media (min-width: 50em) {
-  header .container:after {
-    
-  }
 
 
 }
