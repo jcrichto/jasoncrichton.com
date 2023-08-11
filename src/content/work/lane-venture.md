@@ -19,7 +19,10 @@ tags:
   - Web Development Partner
 ---
 
-## Overview
+<div class="work-wrapper">
+<div class="work-content flow">
+
+## Challenge
 Lane Venture is a premium custom outdoor furniture manufacturer.  The redesign of the site was aimed to be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
 
 The interactive presentation of product collections allowed a user to build a customized “tear-sheets” to help facilitate in-store orders.
@@ -31,8 +34,17 @@ The interactive presentation of product collections allowed a user to build a cu
 13% increase in dealer inquiries
 
 
+
+
 ## What I Learned
 Elevate tapped into the brand’s century-old heritage for a visually-rich interactive presentation of product collections while giving visitors the ability to create customized information “tear-sheets” to help facilitate in-store orders.
+
+<div class="work-highlight">
+<img src="/assets/work/lane-venture/lane-pdp@2x.jpg" alt="">
+</div>
+
+</div>
+</div>
 
 
 <style>
@@ -47,6 +59,6 @@ Elevate tapped into the brand’s century-old heritage for a visually-rich inter
   main {
     background-image: url('/assets/work/lane-venture/lane-texture-lg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 </style>

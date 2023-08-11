@@ -40,8 +40,8 @@ const projects = (await getCollection('work'))
 	<div class="container" data-type="wide">
 	<main>
 		<Skills />
-		<section class="section with-background with-cta">
-			<header class="flow">
+		<section class="section-spacer">
+			<header class="text-center flow">
 				<h3 class="heading-1 ff-accent gradient-text">Selected Work</h3>
 				<p>Take a look below at some of my featured work for clients from the past few years.</p>
 			</header>
@@ -66,8 +66,8 @@ const projects = (await getCollection('work'))
 			</div>
 		</section>
 
-		<section>
-			<header>
+		<section class="section-spacer">
+			<header class="text-center flow">
 				<h3 class="heading-1 gradient-text">Awards</h3>
 				<p>
 					In my career, I've contributed to a number of award-winning projects. I have been blessed to work with great teams and the recognition it brings.
@@ -103,47 +103,40 @@ const projects = (await getCollection('work'))
 			height: 100px;
 	}
 
-	.with-background::before {
-		--hero-bg: var(--bg-image-subtle-2);
-
-		content: '';
-		position: absolute;
-		pointer-events: none;
-		left: 50%;
-		width: 100vw;
-		aspect-ratio: calc(2.25 / var(--bg-scale));
-		top: 0;
-		transform: translateY(-75%) translateX(-50%);
-		background: url('/assets/backgrounds/noise.png') top center/220px repeat,
-			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat, var(--gray-999);
-		background-blend-mode: overlay, normal, normal, normal;
-		mix-blend-mode: var(--bg-blend-mode);
-		z-index: -1;
-	}
-
-	.with-background.bg-variant::before {
-		--hero-bg: var(--bg-image-subtle-1);
-	}
-
 	.hero {
-		height: 80vh;
-		background: url('./assets/hero-01.jpg') no-repeat;
-		background-position: center bottom -100px;
-		background-size: contain;
+		height: 100vh;
+
+		background-repeat: no-repeat, no-repeat;
+		background-position: center bottom -200px, center bottom;
+		background-size: cover;
 		background-attachment: scroll;
-		/* position: fixed; */
+
 		display: flex;
 		background-color: #fff;
+		
+		background-image: url('./assets/hero.png'), linear-gradient(#fff, #eee);
+
 	}
 
 
+	@supports (background-image: url('./assets/hero.webp')) {
+		.hero {
+			background-image: url('./assets/hero.webp'), linear-gradient(#fff, #eee);
+		}
+	}
+
+
+	#mainnav {
+		position: absolute;
+	}
+
 	.hero-content {
-		margin-top: 7rem;
+		margin-top: 5.5rem;
 	}
 
 
 	.greeting {		
-		font-size: clamp(2.5rem, -0.875rem + 8.333vw, 5rem);
+		font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
 		font-family: var(--font-accent);
 		color: var(--gray-0);
 		line-height: 1;
@@ -155,16 +148,15 @@ const projects = (await getCollection('work'))
 
 	.overview {
 		font-size: clamp(1rem, -0.875rem + 8.333vw, 1rem);
-		font-weight: 400; 
-		font-family: var(--font-base);
 		margin-top: var(--flow-spacer, 1em);
 	}
 
 	@media (min-width: 60em) {
 		.hero {
-			background-position: bottom right -100px;
+			background-position: bottom right -100px, bottom right;
 			background-size: contain;
 			background-attachment: fixed;
+			height: 80vh;
 		}
 
 		.hero-content {

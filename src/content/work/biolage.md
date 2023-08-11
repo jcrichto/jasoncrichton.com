@@ -25,22 +25,22 @@ tags:
 
 
 ## The Challenge
-The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired "organic" design and move away from the typical boxy storefront.
+The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired “organic” design and move away from the typical boxy storefront.
 
-Technically, the new design and UX needed to support the IT team's storefront reference architecture (SFRA) which was a L'Oréal library of components within their Salesforce Commerce instance used across a number of their brands.
+Technically, the new design and UX needed to support the IT team’s storefront reference architecture (SFRA) which was a L’Oréal library of components within their Salesforce Commerce instance used across a number of their brands.
 
 ## The Solution
-Keeping the consumer's experience in mind, we developed wireframes that provided a clear path to drive purchases. We also incorporated an interactive hair consultation tool, offering personalized product recommendations based on hair type. Additionally, Elevate designed trigger and utility emails for Account Registration, Reset Password, Hair Quiz Results, Blog Highlights, and Newsletter Sign-Up to maintain brand consistency.
+Keeping the consumer’s experience in mind, wireframes and visual designs were created from the library of components to provide a clear path to purchase. An interactive hair consultation tool was designed to offer consumers a personalized product recommendation based on their hair type. Additionally, all forms of marketing communication were designed for their blog, consumer email marketing, and newsletter sign-up flows.
 
-To assist the client's existing development partner, I created functional UI prototypes that showcased the vision for page animations and layouts. During the development phase, we collaborated with the client's IT team for User Acceptance Testing (UAT) to ensure the final designs aligned with the intended vision.
+To assist the client’s existing development partner, fully developed UI prototypes were created that showcased the vision for page animations and layouts. During the development phase, I helped collaborate with the client’s IT team for User Acceptance Testing (UAT) to ensure the final designs aligned with the intended vision.
 
-The first iteration that was launched served as a minimum viable product for other L'Oréal brands, demonstrating the how to really push the library of components through the use of responsive organic shapes.
+After the first iteration of the site was launched, it served as a reference for other L’Oréal brands, demonstrating how to really push the library of components through the use of responsive organic shapes.
 
 ## What I Learned
+Achieving effective communication with the development partner required finding a balance between defining unique, one-off elements and ensuring scalability with the organic shapes for reusable components across different devices. Building out fully working UI prototypes is an extremely effective way to communicate responsive and animation challenges.
 
-Achieving effective communication to the development partner required finding a balance between defining unique, one-off elements and ensuring scalability for reusable components across different devices. Building out fully working UI prototypes is an exteremely effective way to communite responsive and animation challenges.
+Defining requirements for hero images also posed interesting challenges, requiring extensive exploration with various images to establish safe zones on a template for the merchandising team. By thinking creatively and incorporating micro animations, we successfully delivered a project that all teams involved could take great pride in.
 
-Defining requirements for hero images also posed interesting challenges, requiring extensive exploration with various imagery to establish safe zones on a template for the merchandising team. By thinking creatively and incorporating micro animations, we successfully delivered a project that all teams could take pride in.
 
 
 <div class="tile-sustainable__cards">

@@ -235,17 +235,15 @@ const textLinks: { label: string; href: string }[] = [
 		text-align: center;
 	}
 
+	.link.active {
+		background-color: none;
+	}
+
 	.link {
 		display: inline-block;
 		color: var(--gray-300);
 		text-decoration: none;
-		font-size: var(--fs-800);
-	}
-
-	.link.active {
-		color: var(--gray-0);
-		background: none;
-		font-weight: 700;
+		font-size: var(--fs-600);
 	}
 
 	.menu-footer {
@@ -310,7 +308,7 @@ const textLinks: { label: string; href: string }[] = [
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
 			transition: color var(--theme-transition), background-color var(--theme-transition);
-			font-size: var(--fs-500);
+			font-size: var(--fs-300);
 		}
 
 		.link:hover,
@@ -321,7 +319,6 @@ const textLinks: { label: string; href: string }[] = [
 
 		.link.active {
 			color: var(--accent-text-over);
-			background-color: var(--accent-regular);
 		}
 
 		.menu-footer {

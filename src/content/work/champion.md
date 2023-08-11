@@ -25,10 +25,6 @@ tags:
 <h2 class="heading-3">Project Overview</h2>
 <p>Exclusivity and self-expression motivate the streetwear consumer. They connect with authentic brands that offer unique styles that are not mass produced. This valuable feedback informed design iterations and the end result was an experience that reflected the Champion LIFE brand and resonated with this millennial consumer.</p>
 
-<div>
-<img src="/assets/work/champion-life/shirt.png">
-</div>
-
 <p>Interactive prototypes were built and tested in the field with real users to drive the most successful design solution. The shoppable lookbook made up of time-released collections resulted in several product lines selling out days after release.</p>
 </div>
 
