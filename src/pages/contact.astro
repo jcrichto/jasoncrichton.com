@@ -1,196 +1,202 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroContent from '../components/HeroContent.astro';
-import { Icon } from 'astro-icon';
+import HeroContent from "../components/HeroContent.astro";
+import { Icon } from "astro-icon";
 ---
 
 <BaseLayout
   title="Contact | Jason Crichton"
   description="Contact Jason Crichton"
 >
-<HeroContent pageTitle='Contact' pageSummary="Interested in reaching out? Let's Connect!" />
+  <HeroContent
+    pageTitle="Contact"
+    pageSummary="Interested in reaching out? Let's Connect!"
+  />
 
   <script src="//unpkg.com/alpinejs" defer></script>
-  <main class="container flow" data-type="narrow">
 
+  <div class="contact-wrapper">
+    <main class="container flow" data-type="narrow">
+      <section class="content-contact">
+        <form
+          hidden
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+        >
+          <label><input type="text" name="name" /></label>
+          <label> <input type="email" name="email" /></label>
+          <label><textarea name="message"></textarea></label>
+          <div data-netlify-recaptcha="true"></div>
+        </form>
+        <form
+          x-data="{
+            name : '',
+            nameDirty: false,
+            message: '',
+            messageDirty: false,
+            email: '',
+            emailDirty: false,
+            }"
+          x-on:submit.prevent="
+            nameDirty = true;
+            emailDirty = true;
+            messageDirty = true;
+            submitMessage(name, email, message);"
+          id="contact"
+          class="form-contact flow"
+          >
+          <p hidden>
+            <label>ignore: <input name="bot-field" /></label>
+          </p>
+          <input type="hidden" name="form-name" value="contact" />
 
-    <section class="content-contact">
-      <form
-        hidden
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
-      >
-        <label><input type="text" name="name" /></label>
-        <label> <input type="email" name="email" /></label>
-        <label><textarea name="message"></textarea></label>
-        <div data-netlify-recaptcha="true"></div>
-      </form>
-      <form
-        x-data="{
-			name : '',
-			nameDirty: false,
-			message: '',
-			messageDirty: false,
-			email: '',
-			emailDirty: false,
-			}"
-        x-on:submit.prevent="
-			nameDirty = true;
-			emailDirty = true;
-			messageDirty = true;
-			submitMessage(name, email, message);"
-			id="contact"
-			class="form-contact flow"
-      >
-        <p hidden>
-          <label>ignore: <input name="bot-field" /></label>
-        </p>
-        <input type="hidden" name="form-name" value="contact" />
-        
-		<div class="form-group">
-          <label for="name">Full Name: </label>
-			
-			<input
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+
+            <input
               x-model="name"
               x-on:blur="nameDirty = true"
               type="text"
               name="name"
-			  id="name"
+              id="name"
             />
 
-			<p
-			x-show.transition="nameDirty && name.length == 0"
-			style="color: red; display: none;"
-			x-cloak>
-			Please fill out your full name.
-		  </p>
-		</div>
+            <p
+              x-show.transition="nameDirty && name.length == 0"
+              style="color: red; display: none;"
+              x-cloak
+            >
+              Please fill out your full name.
+            </p>
+          </div>
 
-		<div class="form-group">
+          <div class="form-group">
+            <label>Email:</label>
 
-			<label>Email: </label>
-				
-			<input
-				x-model="email"
-				x-on:blur="emailDirty = true"
-				type="email"
-				name="email"
-				/>
-			<p
-			x-show.transition="emailDirty && !isEmail(email)"
-			style="color: red; display: none;"
-			x-cloak
-			>
-			Please provide a valid email.
-			</p>
-		</div>
+            <input
+              x-model="email"
+              x-on:blur="emailDirty = true"
+              type="email"
+              name="email"
+            />
+            <p
+              x-show.transition="emailDirty && !isEmail(email)"
+              style="color: red; display: none;"
+              x-cloak
+            >
+              Please provide a valid email.
+            </p>
+          </div>
 
-		<div class="form-group">
-        
-			<label>Message: </label>
+          <div class="form-group">
+            <label>Message:</label>
 
-			<textarea
-			x-model="message"
-			x-on:blur="messageDirty = true"
-			name="message"></textarea>
-          
-        
-			<p
-			x-show.transition="messageDirty && message.length == 0"
-			style="color: red; display: none;"
-			x-cloak
-			>
-			Please fill out your Message.
-			</p>
+            <textarea
+              x-model="message"
+              x-on:blur="messageDirty = true"
+              name="message"></textarea>
 
-		</div>
+            <p
+              x-show.transition="messageDirty && message.length == 0"
+              style="color: red; display: none;"
+              x-cloak
+            >
+              Please fill out your Message.
+            </p>
+          </div>
 
-        <div data-netlify-recaptcha="true"></div>
-        
+          <div data-netlify-recaptcha="true"></div>
 
-        <p><button type="submit" class="button">Send <Icon name="ph:paper-plane-right" width="1.2em" /></button></p>
-      </form>
-    </section>
-  </main>
+          <p>
+            <button type="submit" class="button"
+              >Send <Icon name="ph:paper-plane-right" width="1.2em" /></button>
+          </p>
+        </form>
+      </section>
+    </main>
+  </div>
 </BaseLayout>
 
 <script type="text/javascript">
 function isEmail(value) {
-	return new RegExp("^\\S+@\\S+[\\.][0-9a-z]+$").test(
-		String(value).toLowerCase()
-	);
-  }
+  return new RegExp("^\\S+@\\S+[\\.][0-9a-z]+$").test(
+    String(value).toLowerCase()
+  );
+}
 
-  function submitMessage(name, email, message) {
-    if (
-      !name ||
-      name.length == 0 ||
-      !email ||
-      !isEmail ||
-      !message ||
-      message.length == 0
-    ) {
-      return;
-    }
-    let formElement = document.getElementById("contact");
-    let body = new URLSearchParams(new FormData(formElement)).toString();
-    return fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: body,
-    })
-      .then((response) => {
-        if (response.ok) {
-          formElement.reset();
-          alert("Thank you for your message!");
-        } else {
-          throw new Error(`Something went wrong: ${response.statusText}`);
-        }
-      })
-      .catch((error) => console.error(error));
+function submitMessage(name, email, message) {
+  if (
+    !name ||
+    name.length == 0 ||
+    !email ||
+    !isEmail ||
+    !message ||
+    message.length == 0
+  ) {
+    return;
   }
+  let formElement = document.getElementById("contact");
+  let body = new URLSearchParams(new FormData(formElement)).toString();
+  return fetch("/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: body,
+  })
+    .then((response) => {
+      if (response.ok) {
+        formElement.reset();
+        alert("Thank you for your message!");
+      } else {
+        throw new Error(`Something went wrong: ${response.statusText}`);
+      }
+    })
+    .catch((error) => console.error(error));
+}
 </script>
 
 <style>
+  .form-contact {
+    margin-top: 2rem;
+  }
 
-.form-contact {
-  margin-top: 2rem;
-}
+  .contact-wrapper {
+    background: linear-gradient(#eee, #fff);
+  }
 
   .form-contact {
     display: grid;
   }
 
   .form-group {
-	display: grid;
+    display: grid;
   }
 
   textarea {
-	min-height: 10rem;
+    min-height: 10rem;
   }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  outline: 0;
-  padding: 1rem;
-  width: 100%;
-  background-color: #ffffff;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  border-radius: 1rem;
-}
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #ffffff;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border-radius: 1rem;
+  }
 
-label {
-  padding: 0 0 .5rem .5rem;
-}
+  label {
+    padding: 0 0 0.5rem 0.5rem;
+  }
 </style>
