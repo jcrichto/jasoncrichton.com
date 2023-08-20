@@ -11,6 +11,10 @@ import HeroContent from '../components/HeroContent.astro';
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
+
+
+
+const { name, url } = Astro.props;
 ---
 
 <BaseLayout
@@ -18,7 +22,9 @@ const projects = (await getCollection('work')).sort(
 	description="Learn about Jason Crichton's most recent projects"
 >
 
+
 	<HeroContent pageTitle='Work' pageSummary='See my most recent projects below to get an idea of my past experience.' />
+
 
 	<main class="container content" data-type="wide">
 		<Grid>

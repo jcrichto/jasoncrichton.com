@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Grid from '../components/Grid.astro';
+import HeroContent from '../components/HeroContent.astro';
+import WorkCard from '../components/work/WorkCard.astro';
+import workListData from "../data/work.json"
+
+const projects = (await getCollection('work')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+
+
+const { name, url } = Astro.props;
+---
+
+<BaseLayout
+	title="My Work | Jason Crichton"
+	description="Learn about Jason Crichton's most recent projects"
+>
+
+
+	<HeroContent pageTitle='Work' pageSummary='See my most recent projects below to get an idea of my past experience.' />
+
+
+	<main class="container content" data-type="wide">
+		<ul>
+			{
+				workListData.map((workListData) => {
+					return (
+						<WorkCard
+							name = {workListData.name}
+							slug = {workListData.slug}
+						/>
+					)
+				})
+			}
+		</ul>
+
+
+		<Grid>
+			{
+				projects.map((project) => (
+					<li>
+						<PortfolioPreview project={project} />
+					</li>
+				))
+			}
+		</Grid>
+	</main>
+	<ContactCTA />
+	
+</BaseLayout>
+
+<style>
+	.content {
+		margin: 5rem auto;
+	}
+</style>

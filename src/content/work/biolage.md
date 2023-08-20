@@ -74,7 +74,7 @@ Defining requirements for hero images also posed interesting challenges, requiri
 
 
 <div class="work-highlight">
-<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt="">
+<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt=""  class="img-zoomable" style="width: 25%" data-zooming-width="600">
 </div>
 
 </div>

@@ -5,7 +5,7 @@ publishDate: 2019-10-02 00:00:00
 img: ../../assets/work/keratin-complex/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: video
-hero_video: /assets/work/keratin-complex/black-seq-contrast.mp4
+hero_video: /assets/work/keratin-complex/hero-keratin
 hero_img: ../../assets/work/keratin-complex/hero.jpg
 logo: logos/keratin-complex
 description: |
@@ -35,7 +35,7 @@ The end result was a record double-digit sales increase within days of launch.
 ## The Solution
 Going through an extensive discovery session with the client, the requirements were heavy on the marketing side. Because of these requirements, part of my effort was to architect out a CMS that would provide all the marketing requirements but allow for a tightly integrated e-commerce experience. The solution was the lean on Shopify Plus APIs to handle the cart and checkout for the site.  The site had a B2C and B2B component for the wholesale side of the business.  
 
-<img src="/assets/work/keratin-complex/system-architecture.png" />
+<img src="/assets/work/keratin-complex/system-architecture.png"  class="img-zoomable" />
 
 </div>
 

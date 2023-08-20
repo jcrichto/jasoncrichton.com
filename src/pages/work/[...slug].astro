@@ -48,7 +48,8 @@ const { Content } = await entry.render();
           muted="true"
           width="100%"
         >
-          <source src={entry.data.hero_video} type="video/mp4" />
+        <source src=`${entry.data.hero_video}.webm` type="video/webm" />  
+        <source src=`${entry.data.hero_video}.mp4` type="video/mp4" />
         </video>
       )
     }
@@ -172,3 +173,14 @@ const { Content } = await entry.render();
     }
   }
 </style>
+
+<script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+<script>
+  // Listen to images after DOM content is fully loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    new Zooming({
+      // options...
+      // bgOpacity: .90
+    }).listen('.img-zoomable')
+  })
+</script>
