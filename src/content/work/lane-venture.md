@@ -2,14 +2,13 @@
 title: Bassett Furniture - Lane Venture
 projectType: Site Redesign
 publishDate: 2019-12-01 00:00:00
-img: ../../assets/work/lane-venture/listing.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img: ../../../public/assets/work/lane-venture/listing.jpg
+img_alt: Lane Venture Furniture
 hero_type: img
-hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
-hero_img: ../../assets/work/lane-venture/hero.jpg
+hero_img: ../../../public/assets/work/lane-venture/hero.jpg
 logo: logos/lane-venture
 description: |
-  Lane Venture is a premium custom outdoor furniture manufacturer.  The redesign of the site was aimed to be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
+  Lane Venture was in need of a redesign of their site that could be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
 tags:
   - Customer / Audience Research
   - Content Strategy
@@ -30,7 +29,6 @@ The interactive presentation of product collections allowed a user to build a cu
 
 ## Results
 
-![400% increase in organic site traffic](../../assets/work/lane-venture/400.png)
 <img src="/assets/work/lane-venture/400.png" alt="400% increase in organic site traffic" />
 
 13% increase in dealer inquiries

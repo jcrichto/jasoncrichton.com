@@ -2,11 +2,10 @@
 title: Champion Real Champions
 projectType: Shopable Landing Pages
 publishDate: 2019-10-02 00:00:00
-img: ../../assets/work/real-champions/listing.jpg
+img: ../../../public/assets/work/real-champions/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: video
 hero_video: /assets/work/real-champions/hero-c
-hero_img: ../../assets/work/real-champions/hero.jpg
 logo: logos/champion
 bodyclass: theme-dark nav-theme-light
 description: |
@@ -18,11 +17,12 @@ tags:
   - User Testing
   - Prototyping
   - Front-end Development
+zoomBg: '#000'
 ---
 
 
 <div class="work-col">
-<div class="flow">
+<div class="flow work-content">
 <h2>Project Overview</h2>
 <p>Champion needed a site experience for their Real Champions social campaign, which shares the stories of four real people who have overcome personal challenges through sport.</p>
 
@@ -32,12 +32,17 @@ tags:
 
 <h2>The Solution</h2>
 
-<p>The site was built with a focus on a story-driven shopping experience. Vignettes for each athlete featured vivid action photography and narrative videos. The Champion products were introduced as supporting features of the Real Champion’s athletic pursuits and personal style.  Whether consumers related directly with each challenge of the atheletes or saw how Champion was used to help support these athelete, it was all a win-win.  The campaign was successful because of it's shoppable short documentary feel vs just using an influencer.</p>
+<p>The site was built with a focus on a story-driven shopping experience. Vignettes for each athlete featured vivid action photography and narrative videos. The Champion products were introduced as supporting features of the Real Champion’s athletic pursuits and personal style.  Whether consumers related directly with each athletes's challenge or saw how Champion was used as an inspiration to help overcome, it was all a win-win.  The campaign was successful because of it's shoppable short documentary feel vs just using a typical social media influencer.</p>
 
 <p>In addition to the site experience and promotion on social channels, an email marketing series was designed and develop to further promote the campaign.</p>
 
 
 </div>
+
+<div class="results">
+<img src="/assets/work/real-champions/96-percent.png" alt="96% ROI within 3 months of launch" >
+</div>
+
 </div>
 
 <div class="screens">
@@ -75,30 +80,7 @@ main .container:after {
   z-index: 8
 }
 
-
-.screens {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  gap: 20px;
-  margin-top: 5rem;
-}
-
-.screens img {
-  flex: 25%;
-  width: 100%;
-}
-
 @media (min-width: 50em) {
-  .screens {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  .screens img {
-    flex: 25%;
-  }
-
   main .container:after {
     top: -55px;
   }

@@ -2,15 +2,13 @@
 title: Keratin Complex
 projectType: Site Redesign
 publishDate: 2019-10-02 00:00:00
-img: ../../assets/work/keratin-complex/listing.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img: ../../../public/assets/work/keratin-complex/listing.jpg
+img_alt: Keratin Complex
 hero_type: video
 hero_video: /assets/work/keratin-complex/hero-keratin
-hero_img: ../../assets/work/keratin-complex/hero.jpg
 logo: logos/keratin-complex
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Keratin Complex needed help identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e-commerce technology stack in the process.
 tags:
   - Visual Design
   - UX Design

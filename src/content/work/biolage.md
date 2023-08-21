@@ -2,14 +2,13 @@
 title: L'Oréal - Biolage
 projectType: Site Redesign
 publishDate: 2020-03-02 00:00:00
-img: ../../assets/work/biolage/listing.jpg
+img: ../../../public/assets/work/biolage/listing.jpg
 img_alt: Biolage Botanical Redesign
 hero_type: img
-hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
-hero_img: ../../assets/work/biolage/hero.jpg
+hero_img: ../../../public/assets/work/biolage/hero.jpg
 logo: logos/biolage
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand.
 tags:
   - UX / Visual Design
   - Frontend Development

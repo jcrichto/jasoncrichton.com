@@ -12,9 +12,10 @@ export const collections = {
 			img_alt: z.string().optional(),
 			hero_type: z.string(),
 			hero_video: z.string().optional(),
-			hero_img: image().refine((img) => img.width >= 800, { message: "Hero Image must be at lest 800 wide!",}),
+			hero_img: image().refine((img) => img.width >= 800, { message: "Hero Image must be at lest 800 wide!",}).optional(),
 			bodyclass: z.string().optional(),
 			logo: z.string(),
+			zoomBg: z.string().optional().default("#fff"),
 		}),
 	}),
 };

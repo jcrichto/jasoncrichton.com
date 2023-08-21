@@ -2,16 +2,15 @@
 title: Champion LIFE
 projectType: Site Redesign
 publishDate: 2019-10-02 00:00:00
-img: ../../assets/work/champion-life/listing.jpg
+img: ../../../public/assets/work/champion-life/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
-hero_img: ../../assets/work/champion-life/hero.jpg
+hero_img: ../../../public/assets/work/champion-life/hero.jpg
 logo: logos/champion
 bodyclass: theme-dark
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Created a streetwear shoppable microsite for Champion Life that brought this niche audience what they wanted - an exclusive customer experience.
 tags:
   - Visual Design
   - UX Design
@@ -31,11 +30,39 @@ tags:
 </div>
 
 <div>
-<img src="/assets/work/champion-life/champion-1@2x.jpg">
-</div>
 
 </div>
 
+</div>
+
+
+
+
+<div class="screens">
+<picture>
+<source srcset="/assets/work/champion-life/champion-1@2x.webp" type="image/webp">
+<source srcset="/assets/work/champion-life/champion-1@2x.jpg" type="image/jpg"> 
+<img src="/assets/work/champion-life/champion-1@2x.jpg" alt="Champion LIFE - Expanded State" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/champion-life/screen-expanded.webp" type="image/webp">
+<source srcset="/assets/work/champion-life/screen-expanded.jpg" type="image/jpg"> 
+<img src="/assets/work/champion-life/screen-expanded.jpg" alt="Champion LIFE - Expanded State" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/champion-life/screen-shopall.webp" type="image/webp">
+<source srcset="/assets/work/champion-life/screen-shopall.jpg" type="image/jpg"> 
+<img src="/assets/work/champion-life/screen-shopall.jpg" alt="Champion LIFE - Shop All State" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/champion-life/screen-calendar.webp" type="image/webp">
+<source srcset="/assets/work/champion-life/screen-calendar.jpg" type="image/jpg"> 
+<img src="/assets/work/champion-life/screen-calendar.jpg" alt="Champion LIFE - Release Calendar State" class="img-zoomable" />
+</picture>
+</div>
 
 
 <style>
