@@ -7,21 +7,30 @@ import '../styles/global.css';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
+  meta_img?: string | undefined;
 }
 
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
+
 
 const {
 	title = 'Jason Crichton: Creative Technology Leader',
 	description = 'I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois.',
+  meta_img
 } = Astro.props;
 
+
+const makeMeta = meta_img
+  ? meta_img
+  : "/meta.jpg";
+
+
+const resolvedImageWithDomain = new URL(
+  makeMeta,
+  Astro.site
+).toString();
 
 const makeTitle = title
   ? title + " | " + "Jason Crichton"
@@ -43,14 +52,14 @@ const makeTitle = title
       canonical={canonicalURL}
       twitter={{
         creator: "@jcrichto",
-        site: "@web3templates",
+        site: "@jcrichto",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Jason Crichton | Creative Technology Leader`,
+          title: `${makeTitle}`,
           image: resolvedImageWithDomain,
         },
         image: {

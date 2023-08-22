@@ -16,6 +16,7 @@ export const collections = {
 			bodyclass: z.string().optional(),
 			logo: z.string(),
 			zoomBg: z.string().optional().default("#fff"),
+			meta_img: z.string().optional(),
 		}),
 	}),
 };

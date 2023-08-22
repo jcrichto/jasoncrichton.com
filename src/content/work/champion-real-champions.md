@@ -1,11 +1,12 @@
 ---
 title: Champion Real Champions
 projectType: Experiential Commerce
-publishDate: 2019-10-02 00:00:00
+publishDate: 2020-03-01 00:00:00
 img: ../../../public/assets/work/real-champions/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: video
 hero_video: /assets/work/real-champions/hero-c
+meta_img: /assets/work/real-champions/meta.jpg
 logo: logos/champion
 bodyclass: theme-dark nav-theme-light
 description: |

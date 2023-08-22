@@ -7,6 +7,7 @@ img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: ../../../public/assets/work/champion-life/hero.jpg
+meta_img: /assets/work/champion-life/meta.jpg
 logo: logos/champion
 bodyclass: theme-dark
 description: |

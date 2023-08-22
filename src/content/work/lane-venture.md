@@ -1,7 +1,7 @@
 ---
 title: Bassett Furniture - Lane Venture
 projectType: Dealer Traffic Generation
-publishDate: 2019-12-01 00:00:00
+publishDate: 2018-12-01 00:00:00
 img: ../../../public/assets/work/lane-venture/listing.jpg
 img_alt: Lane Venture Furniture
 hero_type: img

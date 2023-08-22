@@ -6,6 +6,7 @@ img: ../../../public/assets/work/biolage/listing.jpg
 img_alt: Biolage Botanical Redesign
 hero_type: img
 hero_img: ../../../public/assets/work/biolage/hero.jpg
+meta_img: /assets/work/biolage/meta.jpg
 logo: logos/biolage
 description: The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand.
 tags:
@@ -16,21 +17,28 @@ tags:
 ---
 
 
-<div class="work-wrapper">
-<div class="work-content flow">
 
+
+
+
+<div class="work-col">
+<div class="work-content flow">
 
 ## The Challenge
 The Biolage marketing team required a new immersive e-commerce site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired “organic” design and move away from the typical boxy storefront by emphasizing the level of engagement, interactivity, and micro-animations offered to visitors.
 
-Technically, the new design and UX needed to support the IT team’s storefront reference architecture (SFRA) which was a L’Oréal library of components within their Salesforce Commerce instance used across a number of their brands.
-
 ## The Solution
-Keeping the consumer’s experience in mind, wireframes and visual designs were created from the library of components to provide a clear path to purchase. An interactive hair consultation tool was designed to offer consumers a personalized product recommendation based on their hair type. Additionally, all forms of marketing communication were designed for their blog, consumer email marketing, and newsletter sign-up flows.
+The wireframing and design for the site had to follow a L’Oréal library of reference components that is used across a number of their brands. Those components had to be pushed in terms of layout and design, with complicated overlaps and animation. An interactive hair consultation tool was designed to offer consumers a personalized product recommendation based on their hair type. Additionally, all forms of marketing communication were designed for their blog, consumer email marketing, and newsletter sign-up flows.
 
-To assist the client’s existing development partner, fully developed UI prototypes were created that showcased the vision for page animations and layouts. During the development phase, I helped collaborate with the client’s IT team for User Acceptance Testing (UAT) to ensure the final designs aligned with the intended vision.
+</div>
 
-After the first iteration of the site was launched, it served as a reference for other L’Oréal brands, demonstrating how to really push the library of components through the use of responsive organic shapes.
+<div class="results">
+<img src="/assets/work/seed/2-month-prelaunch.png" alt="2 Month Pre-launch Strategy" />
+</div>
+
+</div>
+</div>
+
 
 
 
@@ -54,6 +62,18 @@ After the first iteration of the site was launched, it served as a reference for
 </div>
 
 
+
+<h2 class="text-center" style="margin-bottom: 1rem">Animations - Home Page</h2>
+
+<div class="biolage-video_wrap">
+<div class="biolage-video">
+
+<video id="video" class="vid-big" playsinline="true" autoplay="true" loop="true" muted="true" width="100%" frameborder="0">
+<source src="/assets/work/biolage/biolage-home_c.webm" type="video/webm" />
+<source src="/assets/work/biolage/biolage-home_c.mp4" type="video/mp4" />
+</video>
+</div>
+</div>
 
 
 <div class="screens">
@@ -109,45 +129,20 @@ body {
   background-color: #fff;
 }
 
-.large-leaf {
-  position: absolute;
-  left: 0;
-  top: 70%;
-  z-index: 10;
+.biolage-video {
+	overflow: hidden;
+	clip-path: inset(2px 2px);
+	width: 50%;
+	margin-inline: auto;
 }
 
-.heart {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    background: url("/assets/work/biolage/heart-sprite.png") no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-    transition: background-position 1s steps(28);
-    transition-duration: 0s;
-	/* transform: scale(0.75); */
+.biolage-video video:focus {
+	background-color: #fff;
 }
 
-.heart:hover {
-    /* background-position: -100px 0; */
-        transition-duration: 1s;
-    background-position: -2900px 0;
-}
-
-.heart:focus {
-    background-position: 0 0;
-}
-
-.heart.is-active {
-    transition-duration: 1s;
-    background-position: -2900px 0;
-}
-
-.heart-container {
-  position: relative;
-  width: 100%;
+.biolage-video_wrap {
+	background: #eee;
+	padding: 2rem;
 }
 
 

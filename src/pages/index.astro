@@ -18,7 +18,6 @@ import Skills from "../components/Skills.astro";
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection("work"))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-  .slice(0, 4);
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -46,7 +45,7 @@ const projects = (await getCollection("work"))
       <Skills />
       <section class="section-spacer">
         <header class="text-center flow">
-          <h3 class="heading-1 ff-accent gradient-text">Selected Work</h3>
+          <h3 class="heading-1 ff-accent gradient-text">Work Experience</h3>
           <p>
             Take a look below at some of my featured work for clients from the
             past few years.
@@ -65,12 +64,7 @@ const projects = (await getCollection("work"))
           </Grid>
         </div>
 
-        <div class="cta text-center">
-          <CallToAction href="/work/">
-            View All Work
-            <Icon name="ph:arrow-right" width="1.2em" />
-          </CallToAction>
-        </div>
+
       </section>
 
       <section class="section-spacer">

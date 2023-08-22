@@ -7,7 +7,6 @@ import ContactCTA from "../../components/ContactCTA.astro";
 // import { sortByDate } from "../../utils/sortByDate.js";
 
 import { Icon } from "astro-icon";
-
 import { Image } from "astro:assets";
 
 interface Props {
@@ -32,7 +31,7 @@ const { Content } = await entry.render();
 
 
 const makeWorkTitle = entry.data.title
-  ? entry.data.projectType + " - " + entry.data.title + " | " + "Jason Crichton"
+  ? entry.data.title + " - " + entry.data.projectType
   : "Jason Crichton | Creative Technology Leader";
 
 ---
@@ -41,6 +40,7 @@ const makeWorkTitle = entry.data.title
   title={makeWorkTitle}
   description={entry.data.description}
   bodyclass={entry.data.bodyclass}
+  meta_img={entry.data.meta_img}
 >
   <section class="work-hero">
     <div class="work-hero-cover"></div>
@@ -203,7 +203,7 @@ const makeWorkTitle = entry.data.title
     /* border: 1px solid var(--gray-600); */
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
-    background: url("../../../public/assets/tag-bot.svg") no-repeat left bottom, url("../../../public/assets/tag-top.svg") no-repeat right top;
+    background: url("/assets/tag-bot.svg") no-repeat left bottom, url("/assets/tag-top.svg") no-repeat right top;
   }
 
 
