@@ -21,4 +21,4 @@ tags:
 
 ## The Challenge
 
-The Seed team came to us with a big challenge — to help them tell their mission-driven story. They were a fresh new brand, still developing their first season of products, and they enlisted Elevate’s help to create a website that would preview their product line and, most importantly, share their four brand pillars: promoting natural beauty, leading environmental sustainability, supporting independent american organic farmers, and preserving seed diversity.
+The Seed team came to us with a big challenge — to help them tell their mission-driven story. They were a fresh new brand, still developing their first season of products, and they enlisted Elevate’s help to create a website that would preview their product line and, most importantly, share their four brand pillars: promoting natural beauty, leading environmental sustainability, supporting independent American organic farmers, and preserving seed diversity.

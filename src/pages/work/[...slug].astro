@@ -26,13 +26,19 @@ export async function getStaticPaths() {
   }));
 }
 
+
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+
+const makeWorkTitle = entry.data.title
+  ? entry.data.projectType + " - " + entry.data.title + " | " + "Jason Crichton"
+  : "Jason Crichton | Creative Technology Leader";
 
 ---
 
 <BaseLayout
-  title={entry.data.title}
+  title={makeWorkTitle}
   description={entry.data.description}
   bodyclass={entry.data.bodyclass}
 >
@@ -194,11 +200,12 @@ const { Content } = await entry.render();
   }
 
   .tags li {
-    border: 1px solid var(--gray-600);
+    /* border: 1px solid var(--gray-600); */
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
-    border-radius: 999rem;
+    background: url("../../../public/assets/tag-bot.svg") no-repeat left bottom, url("../../../public/assets/tag-top.svg") no-repeat right top;
   }
+
 
   @media (min-width: 50em) {
     .work-hero img,

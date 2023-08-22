@@ -27,7 +27,7 @@ Lane Venture is a premium custom outdoor furniture manufacturer.  The redesign o
 The interactive presentation of product collections allowed a user to build a customized “tear-sheets” to help facilitate in-store orders.
 
 ## The Solution
-Lane Venture has a large catalog of products and variants for patterns and materials that makes it challenging visualize how they look next to each other.  They had an existing asset flat texture library of all the patterns and materials.  During discovery we explored 3d parters that could dynamically generate a 3d textured model shot of each product on the fly.  The timing and cost of that solution drove the solution of presenting flat interactive shots utilizing assets they already had. The end result still provided a way for an interior designer to visual how they could configure a product to match their vision. This customized information was used to generate a printed “tear-sheets” to help facilitate in-store orders.
+Lane Venture has a large catalog of products and variants for patterns and materials that makes it challenging visualize how they look next to each other.  They had an existing asset flat texture library of all the patterns and materials.  During discovery we explored 3d partners that could dynamically generate a 3d textured model shot of each product on the fly.  The timing and cost of that solution drove the solution of presenting flat interactive shots utilizing assets they already had. The end result still provided a way for an interior designer to visual how they could configure a product to match their vision. This customized information was used to generate a printed “tear-sheets” to help facilitate in-store orders.
 
 
 

@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import '../styles/reset.css';
 import '../styles/global.css';
 
@@ -8,17 +9,27 @@ interface Props {
 	description?: string | undefined;
 }
 
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
 const {
 	title = 'Jason Crichton: Creative Technology Leader',
 	description = 'I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois.',
 } = Astro.props;
+
+
+const makeTitle = title
+  ? title + " | " + "Jason Crichton"
+  : "Jason Crichton | Creative Technology Leader";
 ---
 
 <meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
-<title>{title}</title>
-
 
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,6 +37,27 @@ const {
 <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)">
 
 <meta name="theme-color" content="#ffffff" />
+<SEO
+      title={makeTitle}
+      description={description}
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@jcrichto",
+        site: "@web3templates",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `Jason Crichton | Creative Technology Leader`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Jason Crichton Screenshot",
+        },
+      }}
+    />
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

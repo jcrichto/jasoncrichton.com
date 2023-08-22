@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  heroImage: ImageMetadata;
+}
+
+const { heroImage } = Astro.props;
+---
+
+<section class="work-hero">
+  <div class="work-hero-cover"></div>
+  <Image src={heroImage} alt="" height="1500" style="height: auto" />
+</section>
+
+<style>
+  .work-hero img,
+  .work-hero video {
+    object-fit: cover;
+    height: 60vh;
+  }
+
+  .work-hero {
+    position: relative;
+    z-index: 5;
+  }
+</style>

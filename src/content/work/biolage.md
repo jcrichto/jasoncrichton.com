@@ -7,8 +7,7 @@ img_alt: Biolage Botanical Redesign
 hero_type: img
 hero_img: ../../../public/assets/work/biolage/hero.jpg
 logo: logos/biolage
-description: |
-  The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand.
+description: The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand.
 tags:
   - UX Design
   - Visual Design
