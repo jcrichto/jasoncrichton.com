@@ -84,10 +84,8 @@ const { Content } = await entry.render();
     </section>
   </main>
 
-  <section class="work-related container">
-    <a class="back-link" href="/work/"
-      ><Icon name="mdi:arrow-left" width="1.5em" /> Work</a
-    >
+  <section class="more-work container">
+    <a class="button outline" href="/work/">View More Work</a>
   </section>
   <ContactCTA />
 </BaseLayout>
@@ -115,18 +113,28 @@ const { Content } = await entry.render();
 	color: #fff;
   }
 
+  body.theme-dark .button.outline {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
   .work-highlight {
     flex: 1;
   }
 
   .work-col {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5rem;
   }
 
   .results {
     flex: 1;
+  }
+
+  .results img {
+    max-width: 400px;
   }
 
   .screens {
@@ -136,9 +144,18 @@ const { Content } = await entry.render();
     margin-top: 5rem;
   }
 
+  .more-work {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
   @media (min-width: 50em) {
     .screens {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .work-col {
+      flex-direction: row;
     }
   }
 </style>

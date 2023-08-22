@@ -211,6 +211,13 @@ body.theme-dark h5 {
 }
 
 
+.button.outline {
+	background: none;
+	border: 1px solid var(--gray-0);
+	color: var(--gray-0);
+}
+
+
 
 /* Overlay for hover effects. */
 .button::after {

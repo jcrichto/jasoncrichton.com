@@ -1,6 +1,6 @@
 ---
 title: Bassett Furniture - Lane Venture
-projectType: Site Redesign
+projectType: Dealer Traffic Generation
 publishDate: 2019-12-01 00:00:00
 img: ../../../public/assets/work/lane-venture/listing.jpg
 img_alt: Lane Venture Furniture
@@ -10,15 +10,15 @@ logo: logos/lane-venture
 description: |
   Lane Venture was in need of a redesign of their site that could be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
 tags:
-  - Customer / Audience Research
-  - Content Strategy
-  - User Experience
-  - Visual Design
   - Front-end Development
-  - Web Development Partner
+  - UX Design
+  - Visual Design
+  - Customer / Audience Research
 ---
 
-<div class="work-wrapper">
+
+
+<div class="work-col">
 <div class="work-content flow">
 
 ## Challenge
@@ -26,35 +26,38 @@ Lane Venture is a premium custom outdoor furniture manufacturer.  The redesign o
 
 The interactive presentation of product collections allowed a user to build a customized “tear-sheets” to help facilitate in-store orders.
 
-
-## Results
-
-<img src="/assets/work/lane-venture/400.png" alt="400% increase in organic site traffic" />
-
-13% increase in dealer inquiries
-
-
-<div class="lane-solution-wrapper">
-<div class="lane-solution">
-
 ## The Solution
 Lane Venture has a large catalog of products and variants for patterns and materials that makes it challenging visualize how they look next to each other.  They had an existing asset flat texture library of all the patterns and materials.  During discovery we explored 3d parters that could dynamically generate a 3d textured model shot of each product on the fly.  The timing and cost of that solution drove the solution of presenting flat interactive shots utilizing assets they already had. The end result still provided a way for an interior designer to visual how they could configure a product to match their vision. This customized information was used to generate a printed “tear-sheets” to help facilitate in-store orders.
+
+
+
+
 </div>
+
+<div class="results">
+<img src="/assets/work/lane-venture/increase-13.png" alt="13% increase in dealer inquiries" />
+
 
 <div class="lane-video">
 <video id="video" class="vid-big" playsinline="true" autoplay="true" loop="true" muted="true" width="100%" frameborder="0">
 <source src="/assets/work/lane-venture/lane-configurator.mp4" type="video/mp4" />
 </video>
 </div>
-</div>
 
-<div class="work-highlight">
-<img src="../../assets/work/lane-venture/lane-pdp@2x.jpg" alt="">
 </div>
-
 
 </div>
 </div>
+
+
+
+<div class="screens">
+<img src="../../assets/work/lane-venture/lane-home@2x.jpg" alt="" class="img-zoomable">
+<img src="../../assets/work/lane-venture/lane-fabric-selector@2x.jpg" alt="" class="img-zoomable">
+<img src="../../assets/work/lane-venture/lane-pdp@2x.jpg" alt="" class="img-zoomable">
+</div>
+
+
 
 
 <style>

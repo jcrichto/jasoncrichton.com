@@ -1,6 +1,6 @@
 ---
 title: L'Oréal - Seed Phytonutrients
-projectType: Site Redesign
+projectType: Narrative Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/seed/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.

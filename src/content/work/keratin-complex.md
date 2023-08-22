@@ -1,6 +1,6 @@
 ---
 title: Keratin Complex
-projectType: Site Redesign
+projectType: Headless Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/keratin-complex/listing.jpg
 img_alt: Keratin Complex
@@ -14,31 +14,33 @@ tags:
   - UX Design
   - User Testing
   - Technical Strategy
-  - Shopify Plus
+  - Frontend Development
+  - Backend Development
 bodyclass: nav-theme-light
 ---
 
 
-<div class="work-wrapper">
+<div class="work-col">
 <div class="work-content flow">
 
 ## The Challenge
 I was tasked with identifying key opportunities to improve the overall site experience to drive revenue while migrating from a legacy Magento platform to a more modern e‑commerce technology stack that leaned heavily on Shopify Plus APIs. 
 
-## The Results
-**57% increase** month-over-month in site revenue
-
-The end result was a record double-digit sales increase within days of launch.
-
 ## The Solution
 Going through an extensive discovery session with the client, the requirements were heavy on the marketing side. Because of these requirements, part of my effort was to architect out a CMS that would provide all the marketing requirements but allow for a tightly integrated e-commerce experience. The solution was the lean on Shopify Plus APIs to handle the cart and checkout for the site.  The site had a B2C and B2B component for the wholesale side of the business.  
 
-<img src="/assets/work/keratin-complex/system-architecture.png"  class="img-zoomable" />
+</div>
+
+<div class="results">
+<img src="/assets/work/keratin-complex/57-increase.png" alt="57% increase month-over-month in site revenue" >
+</div>
 
 </div>
 
-<div class="work-highlight">
-<img src="/assets/work/keratin-complex/screen-2.jpg" alt="">
+<div class="screens">
+<img src="/assets/work/keratin-complex/screen-home.jpg" alt="" class="img-zoomable">
+<img src="/assets/work/keratin-complex/screen-2.jpg" alt="" class="img-zoomable">
+<img src="/assets/work/keratin-complex/system-architecture.png" class="img-zoomable" />
 </div>
 
 </div>

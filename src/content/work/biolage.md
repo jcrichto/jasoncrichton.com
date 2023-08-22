@@ -1,6 +1,6 @@
 ---
 title: L'Oréal - Biolage
-projectType: Site Redesign
+projectType: Immersive Commerce
 publishDate: 2020-03-02 00:00:00
 img: ../../../public/assets/work/biolage/listing.jpg
 img_alt: Biolage Botanical Redesign
@@ -10,13 +10,11 @@ logo: logos/biolage
 description: |
   The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand.
 tags:
-  - UX / Visual Design
+  - UX Design
+  - Visual Design
   - Frontend Development
   - E-mail Design and Development
 ---
-
-
-<img src="/assets/work/biolage/large-leaf.png" class="large-leaf">
 
 
 <div class="work-wrapper">
@@ -24,7 +22,7 @@ tags:
 
 
 ## The Challenge
-The Biolage marketing team faced the task of creating a new site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired “organic” design and move away from the typical boxy storefront.
+The Biolage marketing team required a new immersive e-commerce site that originally lived under the Matrix brand. The goal was to showcase a new botanical-inspired “organic” design and move away from the typical boxy storefront by emphasizing the level of engagement, interactivity, and micro-animations offered to visitors.
 
 Technically, the new design and UX needed to support the IT team’s storefront reference architecture (SFRA) which was a L’Oréal library of components within their Salesforce Commerce instance used across a number of their brands.
 
@@ -34,11 +32,6 @@ Keeping the consumer’s experience in mind, wireframes and visual designs were 
 To assist the client’s existing development partner, fully developed UI prototypes were created that showcased the vision for page animations and layouts. During the development phase, I helped collaborate with the client’s IT team for User Acceptance Testing (UAT) to ensure the final designs aligned with the intended vision.
 
 After the first iteration of the site was launched, it served as a reference for other L’Oréal brands, demonstrating how to really push the library of components through the use of responsive organic shapes.
-
-## What I Learned
-Achieving effective communication with the development partner required finding a balance between defining unique, one-off elements and ensuring scalability with the organic shapes for reusable components across different devices. Building out fully working UI prototypes is an extremely effective way to communicate responsive and animation challenges.
-
-Defining requirements for hero images also posed interesting challenges, requiring extensive exploration with various images to establish safe zones on a template for the merchandising team. By thinking creatively and incorporating micro animations, we successfully delivered a project that all teams involved could take great pride in.
 
 
 
@@ -63,17 +56,12 @@ Defining requirements for hero images also posed interesting challenges, requiri
 
 
 
-<div class="heart-container">
-<div class="heart"></div>
-</div>
 
-
-
-
-
-
-<div class="work-highlight">
-<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt=""  class="img-zoomable" style="width: 25%" data-zooming-width="600">
+<div class="screens">
+<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt=""  class="img-zoomable">
+<img src="/assets/work/biolage/biolage-lookbook@2x.jpg" alt=""  class="img-zoomable">
+<img src="/assets/work/biolage/biolage-pdp@2x.jpg" alt=""  class="img-zoomable">
+<img src="/assets/work/biolage/biolage-flow@2x.png" alt=""  class="img-zoomable">
 </div>
 
 </div>

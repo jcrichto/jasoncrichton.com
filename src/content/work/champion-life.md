@@ -1,6 +1,6 @@
 ---
 title: Champion LIFE
-projectType: Site Redesign
+projectType: Cult Brand Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/champion-life/listing.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
@@ -12,16 +12,16 @@ bodyclass: theme-dark
 description: |
   Created a streetwear shoppable microsite for Champion Life that brought this niche audience what they wanted - an exclusive customer experience.
 tags:
+  - Front-end Development
+  - Prototyping
   - Visual Design
   - UX Design
   - User Testing
-  - Prototyping
-  - Front-end Development
 ---
 
 
 <div class="work-col">
-<div class="flow">
+<div class="flow work-content">
 <h2>Project Overview</h2>
 <p>The streetwear consumer ties closely to their image and exclusivity. The Champion LIFE brand was created to appeal to this user by avoiding mass production combined with a higher quality product. The task was to provided a storefront that focused on a smaller, high quality line of clothing that resonated with this consumer.</p>
 
@@ -31,9 +31,14 @@ tags:
 
 <div>
 
+<div class="results">
+<img src="/assets/work/champion-life/100-sellout.png" alt="96% ROI within 3 months of launch" >
 </div>
 
 </div>
+</div>
+
+
 
 
 
