@@ -115,12 +115,12 @@ const projects = (await getCollection("work"))
     display: flex;
     background-color: #fff;
 
-    background-image: url("./assets/hero.png"), linear-gradient(#fff, #eee);
+    background-image: url("/assets/hero.png"), linear-gradient(#fff, #eee);
   }
 
-  @supports (background-image: url("./assets/hero.webp")) {
+  @supports (background-image: url("/assets/hero.webp")) {
     .hero {
-      background-image: url("./assets/hero.webp"), linear-gradient(#fff, #eee);
+      background-image: url("/assets/hero.webp"), linear-gradient(#fff, #eee);
     }
   }
 
