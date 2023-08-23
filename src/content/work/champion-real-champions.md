@@ -45,10 +45,30 @@ zoomBg: '#000'
 </div>
 
 <div class="screens">
-<img src="/assets/work/real-champions/screen-clair.jpg" alt="Clair" class="img-zoomable">
-<img src="/assets/work/real-champions/screen-john.jpg" alt="John" class="img-zoomable">
-<img src="/assets/work/real-champions/screen-julian.jpg" alt="Julian" class="img-zoomable">
-<img src="/assets/work/real-champions/screen-karla.jpg" alt="Karla" class="img-zoomable">
+<picture>
+<source srcset="/assets/work/real-champions/screen-clair.webp" type="image/webp">
+<source srcset="/assets/work/real-champions/screen-clair.jpg" type="image/jpg"> 
+<img src="/assets/work/real-champions/screen-clair.jpg" alt="Clair" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/real-champions/screen-john.webp" type="image/webp">
+<source srcset="/assets/work/real-champions/screen-john.jpg" type="image/jpg"> 
+<img src="/assets/work/real-champions/screen-john.jpg" alt="john" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/real-champions/screen-julian.webp" type="image/webp">
+<source srcset="/assets/work/real-champions/screen-julian.jpg" type="image/jpg"> 
+<img src="/assets/work/real-champions/screen-julian.jpg" alt="julian" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/real-champions/screen-karla.webp" type="image/webp">
+<source srcset="/assets/work/real-champions/screen-karla.jpg" type="image/jpg"> 
+<img src="/assets/work/real-champions/screen-karla.jpg" alt="karla" class="img-zoomable" />
+</picture>
+
 </div>
 
 
