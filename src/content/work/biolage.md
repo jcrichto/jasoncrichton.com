@@ -77,10 +77,30 @@ The wireframing and design for the site had to follow a L’Oréal library of re
 
 
 <div class="screens">
-<img src="/assets/work/biolage/biolage-homepage@2x.jpg" alt=""  class="img-zoomable">
-<img src="/assets/work/biolage/biolage-lookbook@2x.jpg" alt=""  class="img-zoomable">
-<img src="/assets/work/biolage/biolage-pdp@2x.jpg" alt=""  class="img-zoomable">
-<img src="/assets/work/biolage/biolage-flow@2x.png" alt=""  class="img-zoomable">
+<picture>
+<source srcset="/assets/work/biolage/screen-home-top.webp" type="image/webp">
+<source srcset="/assets/work/biolage/screen-home-top.jpg" type="image/jpg"> 
+<img src="/assets/work/biolage/screen-home-top.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/biolage/screen-consultation.webp" type="image/webp">
+<source srcset="/assets/work/biolage/screen-consultation.jpg" type="image/jpg"> 
+<img src="/assets/work/biolage/screen-consultation.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/biolage/screen-pdp.webp" type="image/webp">
+<source srcset="/assets/work/biolage/screen-pdp.jpg" type="image/jpg"> 
+<img src="/assets/work/biolage/screen-pdp.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/biolage/screen-flow.webp" type="image/webp">
+<source srcset="/assets/work/biolage/screen-flow.jpg" type="image/jpg"> 
+<img src="/assets/work/biolage/screen-flow.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
 </div>
 
 </div>
@@ -147,6 +167,10 @@ body {
 	padding: 2rem;
 }
 
+
+.screens img {
+	border: 1px solid #333;
+}
 
 
 .tile-sustainable {
