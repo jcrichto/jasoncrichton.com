@@ -85,7 +85,7 @@ body {
 	color: var(--gray-50);
 	font-family: var(--font-body);
 	font-weight: var(--fw-regular);
-	font-size: 0.875rem;
+	font-size: 1.125rem;
 }
 
 a {
@@ -131,6 +131,10 @@ body.theme-dark h5 {
 	font-size: var(--text-xl);
 }
 
+.heading-6 {
+	font-size: var(--text-lg);
+}
+
 /* Utilities */
 
 .sr-only {
@@ -150,6 +154,9 @@ body.theme-dark h5 {
 	flex-direction: column;
 }
 
+.read {
+	max-width: 65ch;
+}
 
 /* gradient heading */
 .gradient-text {
@@ -267,6 +274,7 @@ body.theme-dark h5 {
 
 .text-center {
 	text-align: center;
+	margin: 0 auto;
 }
 
 
