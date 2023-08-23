@@ -33,7 +33,7 @@ The wireframing and design for the site had to follow a L’Oréal library of re
 </div>
 
 <div class="results">
-<img src="/assets/work/seed/2-month-prelaunch.png" alt="2 Month Pre-launch Strategy" />
+<img src="/assets/work/biolage/design-system.png" alt="Design System Enhancements" />
 </div>
 
 </div>
@@ -132,9 +132,11 @@ body {
 .biolage-video {
 	overflow: hidden;
 	clip-path: inset(2px 2px);
-	width: 50%;
+	width: 100%;
 	margin-inline: auto;
 }
+
+
 
 .biolage-video video:focus {
 	background-color: #fff;
@@ -180,10 +182,9 @@ body {
 	 padding-left: 40px;
 }
  .tile-sustainable__cards {
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: wrap;
-	 justify-content: center;
+	     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 	 margin: 0 auto;
 	 padding: 5em 0 70px 0;
 }
@@ -192,13 +193,13 @@ body {
 	 background-image: url(/assets/work/biolage/sustainable-icon-bg.png);
 	 padding: 1em;
 	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	 width: 235px;
+	 max-width: 235px;
 	 text-align: center;
 	 font-size: 18px;
 	 color: #323d47;
 	 transition: all 0.5s;
 	 display: flex;
-	user-select: none;
+	 user-select: none;
 	 flex-direction: column;
 	 position: relative;
 	 margin: 2%;
@@ -275,4 +276,19 @@ body {
 	}
 }
  
+
+
+
+@media (min-width: 50em) {
+
+	.biolage-video {
+		width: 50%;
+	}
+
+	 .tile-sustainable__cards {
+	    display: grid;
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
+		max-width: 1200px;
+	 }
+}
 </style>
