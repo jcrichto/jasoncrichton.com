@@ -8,9 +8,7 @@ hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: ../../../public/assets/work/seed/hero.jpg
 logo: logos/seed
-description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+description: The Seed team needed help to tell their mission-driven story through commerce.
 tags:
   - E-commerce Strategy
   - Information Architecture

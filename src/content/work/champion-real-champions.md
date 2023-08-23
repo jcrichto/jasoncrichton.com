@@ -9,9 +9,7 @@ hero_video: /assets/work/real-champions/hero-c
 meta_img: /assets/work/real-champions/meta.jpg
 logo: logos/champion
 bodyclass: theme-dark nav-theme-light
-description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+description: Champion needed a site experience to share the stories of four real people who have overcome personal challenges through sport.
 tags:
   - Visual Design
   - UX Design

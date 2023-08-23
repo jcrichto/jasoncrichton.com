@@ -7,8 +7,7 @@ img_alt: Keratin Complex
 hero_type: video
 hero_video: /assets/work/keratin-complex/hero-keratin
 logo: logos/keratin-complex
-description: |
-  Keratin Complex needed help identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e-commerce technology stack in the process.
+description: Keratin Complex needed help identifying key opportunities to improve the overall site experience to drive revenue while modernizing the entire e-commerce technology stack in the process.
 tags:
   - Visual Design
   - UX Design

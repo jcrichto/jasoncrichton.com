@@ -7,8 +7,7 @@ img_alt: Lane Venture Furniture
 hero_type: img
 hero_img: ../../../public/assets/work/lane-venture/hero.jpg
 logo: logos/lane-venture
-description: |
-  Lane Venture was in need of a redesign of their site that could be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
+description: Lane Venture was in need of a redesign of their site that could be a source of inspiration, educating consumers and interior designers of their customizable products and driving them to a dealer to place their order.
 tags:
   - Front-end Development
   - UX Design
@@ -87,7 +86,6 @@ Lane Venture has a large catalog of products and variants for patterns and mater
   }
 
   .lane-video video:focus {
-
     background-color: #fff;
   }
 </style>
