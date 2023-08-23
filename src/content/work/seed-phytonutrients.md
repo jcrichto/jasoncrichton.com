@@ -43,9 +43,24 @@ A site was created that focused on storytelling but also kept Seed’s future ec
 
 
 <div class="screens">
-<img src="../../assets/work/seed/screen-homepage.jpg" alt="" class="img-zoomable">
-<img src="../../assets/work/seed/screen-pdp.jpg" alt="" class="img-zoomable">
-<img src="../../assets/work/seed/screen-blog-listing.jpg" alt="" class="img-zoomable">
+<picture>
+<source srcset="/assets/work/seed/screen-homepage.webp" type="image/webp">
+<source srcset="/assets/work/seed/screen-homepage.jpg" type="image/jpg"> 
+<img src="/assets/work/seed/screen-homepage.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/seed/screen-pdp.webp" type="image/webp">
+<source srcset="/assets/work/seed/screen-pdp.jpg" type="image/jpg"> 
+<img src="/assets/work/seed/screen-pdp.jpg" alt="PDP" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/seed/screen-blog-listing.webp" type="image/webp">
+<source srcset="/assets/work/seed/screen-blog-listing.jpg" type="image/jpg"> 
+<img src="/assets/work/seed/screen-blog-listing.jpg" alt="Blog Listing" class="img-zoomable" />
+</picture>
+
 </div>
 
 

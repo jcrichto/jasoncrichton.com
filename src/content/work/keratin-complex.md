@@ -38,9 +38,25 @@ Going through an extensive discovery session with the client, the requirements w
 </div>
 
 <div class="screens">
-<img src="/assets/work/keratin-complex/screen-home.jpg" alt="" class="img-zoomable">
-<img src="/assets/work/keratin-complex/screen-2.jpg" alt="" class="img-zoomable">
-<img src="/assets/work/keratin-complex/system-architecture.png" class="img-zoomable" />
+
+<picture>
+<source srcset="/assets/work/keratin-complex/screen-home.webp" type="image/webp">
+<source srcset="/assets/work/keratin-complex/screen-home.jpg" type="image/jpg"> 
+<img src="/assets/work/keratin-complex/screen-home.jpg" alt="Home Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/keratin-complex/screen-2.webp" type="image/webp">
+<source srcset="/assets/work/keratin-complex/screen-2.jpg" type="image/jpg"> 
+<img src="/assets/work/keratin-complex/screen-2.jpg" alt="Alt Page" class="img-zoomable" />
+</picture>
+
+<picture>
+<source srcset="/assets/work/keratin-complex/system-architecture.webp" type="image/webp">
+<source srcset="/assets/work/keratin-complex/system-architecture.jpg" type="image/jpg"> 
+<img src="/assets/work/keratin-complex/system-architecture.jpg" alt="System Architecture" class="img-zoomable" />
+</picture>
+
 </div>
 
 </div>
