@@ -63,11 +63,13 @@ The wireframing and design for the site had to follow a L’Oréal library of re
 
 
 
-<h2 class="text-center" style="margin-bottom: 1rem">Animations - Home Page</h2>
+<h2 class="text-center" style="margin-bottom: 1rem">Screens</h2>
+
+
 
 <div class="biolage-video_wrap">
 <div class="biolage-video">
-
+<p class="text-center screenlabel">Home Page - Micro Animations</p>
 <video id="video" class="vid-big" playsinline="true" autoplay="true" loop="true" muted="true" width="100%" frameborder="0">
 <source src="/assets/work/biolage/biolage-home_c.webm" type="video/webm" />
 <source src="/assets/work/biolage/biolage-home_c.mp4" type="video/mp4" />
@@ -157,6 +159,9 @@ body {
 }
 
 
+.biolage-video p {
+	margin-bottom: 
+}
 
 .biolage-video video:focus {
 	background-color: #fff;
@@ -167,11 +172,16 @@ body {
 	padding: 2rem;
 }
 
-
-.screens img {
-	border: 1px solid #333;
+.screens {
+	background: #eee;
+	padding: 4rem 2rem;
+	margin-top: 0;
 }
 
+.screenlabel {
+	font-size: var(--text-sm);
+	margin-bottom: 1rem;
+}
 
 .tile-sustainable {
 	 text-align: center;
