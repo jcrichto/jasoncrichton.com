@@ -8,7 +8,7 @@ hero_type: img
 hero_img: ../../../public/assets/work/biolage/hero.jpg
 meta_img: /assets/work/biolage/meta.jpg
 logo: logos/biolage
-description: The Biolage marketing team required a new immersive e-commerce site.
+description: The Biolage marketing team required a new immersive e-commerce site through design enhancement of their components library.
 tags:
   - UX Design
   - Visual Design

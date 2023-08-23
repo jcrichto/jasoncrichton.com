@@ -1,5 +1,5 @@
 ---
-title: Champion Real Champions
+title: Champion - Real Champions
 projectType: Experiential Commerce
 publishDate: 2020-03-01 00:00:00
 img: ../../../public/assets/work/real-champions/listing.jpg
