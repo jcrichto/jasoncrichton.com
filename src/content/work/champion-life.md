@@ -10,7 +10,7 @@ hero_img: ../../../public/assets/work/champion-life/hero.jpg
 meta_img: /assets/work/champion-life/meta.jpg
 logo: logos/champion
 bodyclass: theme-dark
-description: Created a streetwear shoppable microsite for Champion Life that brought this niche audience what they wanted - an exclusive customer experience.
+description: Champion needed help to build an exclusive storefront that appealed to the streetwear consumer.
 tags:
   - Front-end Development
   - Prototyping
