@@ -7,6 +7,7 @@ img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: ../../../public/assets/work/seed/hero.jpg
+meta_img: /assets/work/seed/meta.jpg
 logo: logos/seed
 description: The Seed team needed help to tell their mission-driven story through commerce.
 tags:
