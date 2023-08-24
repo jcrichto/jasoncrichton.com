@@ -140,6 +140,7 @@ function submitMessage(name, email, message) {
     return;
   }
   let formElement = document.getElementById("contact");
+  let submitSuccess = document.querySelector('.submit-success');
   let body = new URLSearchParams(new FormData(formElement)).toString();
   return fetch("/", {
     method: "POST",
