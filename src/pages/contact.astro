@@ -115,7 +115,7 @@ import { Icon } from "astro-icon";
               >Send <Icon name="ph:paper-plane-right" width="1.2em" /></button>
           </p>
         </form>
-        <div class="submit-success"><p>Message sent!🎉</p></div>
+        <div class="submit-success text-center"><h3>Message Sent! 🎉</h3> <p>Thanks for reaching out.  I'll get back to you as soon as I can.</p></div>
       </section>
     </main>
   </div>
@@ -208,5 +208,6 @@ function submitMessage(name, email, message) {
 
   .submit-success {
     display: none;
+    padding: 4rem;
   }
 </style>
