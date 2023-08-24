@@ -115,6 +115,7 @@ import { Icon } from "astro-icon";
               >Send <Icon name="ph:paper-plane-right" width="1.2em" /></button>
           </p>
         </form>
+        <div class="submit-success"><p>Message sent!🎉</p></div>
       </section>
     </main>
   </div>
@@ -150,13 +151,17 @@ function submitMessage(name, email, message) {
     .then((response) => {
       if (response.ok) {
         formElement.reset();
-        alert("Thank you for your message!");
+        submitSuccess.style.display = 'block';
+        formElement.style.display = 'none';
       } else {
         throw new Error(`Something went wrong: ${response.statusText}`);
       }
     })
     .catch((error) => console.error(error));
 }
+
+
+
 </script>
 
 <style>
@@ -198,5 +203,9 @@ function submitMessage(name, email, message) {
 
   label {
     padding: 0 0 0.5rem 0.5rem;
+  }
+
+  .submit-success {
+    display: none;
   }
 </style>
