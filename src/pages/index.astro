@@ -13,7 +13,6 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 
 // Page section components
 import ContactCTA from "../components/ContactCTA.astro";
-import Skills from "../components/Skills.astro";
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection("work"))
@@ -25,24 +24,25 @@ const projects = (await getCollection("work"))
 
 <BaseLayout bodyclass="home">
   <section class="hero">
-    <div class="container" data-type="wide">
-      <div class="hero-content">
+    <div class="container hero-holder" data-type="wide">
+      <div class="hero-content flow">
         <div class="greeting gradient-text fw-bold ff-accent">
           Jason <br />Crichton
         </div>
         <p class="overview heading-6">
-          I am a <span class="fw-bold">creative technology leader</span> with over
-          two decades of creative / marketing / IT experience in the <span
-            class="fw-bold nowrap">e-commerce</span
-          > industry who is currently based in Chicago, Illinois.
-        </p>
+          I am a <span class="fw-bold">UX engineer</span> who can architect web and mobile experiences and then develop them. I have 20+ years in the e-commerce and marketing industry helping worldwide brands improve their user experience and increase sales.</p>
+        <p><a href="/about/#whatis">What's a user experience engineer?</a></p>
+        <CallToAction href="/work/">
+          View My Work
+          <Icon name="ph:arrow-right" width="1.2em" />
+        </CallToAction>
       </div>
     </div>
   </section>
 
   <div class="container" data-type="wide">
     <main>
-      <Skills />
+
       <section class="section-spacer">
         <header class="text-center flow">
           <h3 class="heading-1 ff-accent gradient-text">Work Experience</h3>
@@ -112,24 +112,26 @@ const projects = (await getCollection("work"))
     background-attachment: scroll;
 
     display: flex;
+    align-items: center;
     background-color: #fff;
+    background-image: linear-gradient(#fff, #eee);
 
-    background-image: url("/assets/hero.png"), linear-gradient(#fff, #eee);
+    
   }
 
-  @supports (background-image: url("/assets/hero.webp")) {
-    .hero {
-      background-image: url("/assets/hero.webp"), linear-gradient(#fff, #eee);
-    }
-  }
+
 
   #mainnav {
     position: absolute;
   }
 
-  .hero-content {
-    margin-top: 5.5rem;
+  .hero-holder {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 10%;
   }
+
 
   .greeting {
     font-size: clamp(3rem, -0.875rem + 8.333vw, 5rem);
@@ -152,12 +154,17 @@ const projects = (await getCollection("work"))
       background-position: bottom right -100px, bottom right;
       background-size: contain;
       background-attachment: fixed;
-      height: 80vh;
+      background-image: url("/assets/hero.png"), linear-gradient(#fff, #eee);
     }
 
     .hero-content {
       width: 50%;
-      margin-top: 15rem;
+    }
+
+    @supports (background-image: url("/assets/hero.webp")) {
+      .hero {
+        background-image: url("/assets/hero.webp"), linear-gradient(#fff, #eee);
+      }
     }
   }
 

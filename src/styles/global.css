@@ -97,7 +97,7 @@ h2,
 h3,
 h4,
 h5 {
-	line-height: 1.1;
+	line-height: .9;
 	font-family: var(--font-accent);
 	font-weight: 600;
 	color: var(--gray-100);

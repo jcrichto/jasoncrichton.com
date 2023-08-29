@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import HeroContent from "../components/HeroContent.astro";
+---
+
+<BaseLayout title="About" description="About Jason Crichton">
+  <HeroContent pageTitle="About" />
+
+  <div class="stack">
+    <main class="container about">
+      <section class="flow">
+        <h2 id="who-am-i-">Who am I?</h2>
+        <p>
+          <em>Just a little bit about me:</em> My education background is in technology from <a href="https://polytechnic.purdue.edu/departments/computer-graphics-technology" target="_blank">Purdue University</a>.
+          I have grown in my career from being a visual designer -> UI developer
+          to a manager of a front-end UI team to architecting full marketing and
+          e-commerce digital solutions. Most of my experience is in
+          e-commerce, specifically in the haircare, skincare, apparel
+          industries. I have worked with over fifteen L'Oréal brands for over 18+ years.
+          I have also spent a number of years working with Hanesbrands with the
+          likes of Hanes, Champion, Playtex, and more.
+        </p>
+
+		<p>I have extensive knowledge in front-end technologies and how to specifically push enterprise solutions to be visually appealing, user-friendly and functional. </p>
+
+
+		
+        <h2 id="whatis">User Experience Engineer?</h2>
+        <p>
+          As my career progressed, I would often fall under the creative side or
+          the IT side depending on the project, but I always lived in the middle to help tie creative to
+          the technology. The title of User Experience Engineer and job description below perfectaly encapsultes the core of my responsibilities within a project.
+        </p>
+
+		<div class="jobdesc flow">
+        <p>
+          A UX (User Experience) Engineer is a professional who focuses on
+          bridging the gap between design and development in order to create
+          seamless and user-centered digital experiences. This role is at the
+          intersection of user experience design and front-end development,
+          combining both creative and technical skills. The primary
+          responsibilities of a UX Engineer include:
+        </p>
+        <ol class="flow">
+          <li>
+            <p>
+              <strong>Design and Development Collaboration:</strong> A UX Engineer
+              collaborates closely with UX designers, product managers, and software
+              engineers to ensure that the user interface and interactions are not
+              only visually appealing but also technically feasible to implement.
+              They help translate design concepts into functional and interactive
+              user interfaces.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Prototyping and Interaction:</strong> UX Engineers often create
+              interactive prototypes or mockups that simulate the user experience.
+              These prototypes can be used to validate design ideas, gather user
+              feedback, and fine-tune interactions before full development.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Front-End Development:</strong> They have a strong understanding
+              of front-end technologies such as HTML, CSS, and JavaScript. They use
+              these skills to implement the user interfaces and interactions based
+              on the design specifications. This involves ensuring responsive design
+              for various devices and browsers.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>User-Centered Approach:</strong> UX Engineers prioritize the
+              needs and preferences of the users throughout the design and development
+              process. They ensure that the interface is intuitive, easy to navigate,
+              and provides a positive user experience.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Performance and Accessibility:</strong> UX Engineers are mindful
+              of performance optimization and accessibility standards. They work
+              to create interfaces that load quickly and are accessible to users
+              with disabilities, following guidelines like WCAG (Web Content Accessibility
+              Guidelines).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>User Testing and Iteration:</strong> They collaborate with
+              UX researchers to conduct user testing and gather feedback on the user
+              experience. Based on the insights gained, they iterate on the design
+              and development to improve the product.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Cross-Functional Communication:</strong> A key part of the
+              role involves effective communication between design, development,
+              and product teams. UX Engineers need to convey technical constraints,
+              propose feasible solutions, and ensure that the final product aligns
+              with the initial design vision.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Stay Updated on Trends:</strong> The field of UX design and
+              front-end development is constantly evolving. UX Engineers stay updated
+              on the latest design trends, technologies, and best practices to deliver
+              modern and engaging user experiences.
+            </p>
+          </li>
+        </ol>
+        <p>
+          In essence, a UX Engineer combines the creative aspects of user
+          experience design with the technical expertise of front-end
+          development to create digital products that are not only visually
+          appealing but also user-friendly and functional.
+        </p>
+		</div>
+
+
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  .jobdesc {
+	background: 1px 1px/8px 8px #f6f9fc radial-gradient(rgba(203,214,224,0.35) 18.75%,transparent 0);
+	padding: 2rem;
+	border-radius: 1rem;
+	margin-bottom: 3rem;
+  }
+</style>
