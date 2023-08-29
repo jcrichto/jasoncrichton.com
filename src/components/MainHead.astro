@@ -16,8 +16,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 
 const {
-	title = 'Jason Crichton: Creative Technology Leader',
-	description = 'I am a creative technology leader with over two decades of marketing / IT experience in the e-commerce industry who is currently based in Chicago, Illinois.',
+	title = '',
+	description = 'I am a UX engineer who can architect web and mobile experiences and then develop them. I have 20+ years in the e-commerce and marketing industry helping worldwide brands improve their user experience and increase sales.',
   meta_img
 } = Astro.props;
 
@@ -34,7 +34,7 @@ const resolvedImageWithDomain = new URL(
 
 const makeTitle = title
   ? title + " | " + "Jason Crichton"
-  : "Jason Crichton | Creative Technology Leader";
+  : "Jason Crichton | UX Engineer";
 ---
 
 <meta charset="UTF-8" />
