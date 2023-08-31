@@ -11,7 +11,6 @@ export default defineConfig({
     }
   },
   experimental: {
-    assets: true
   },
   integrations: [sitemap()]
 });
