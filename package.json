@@ -14,6 +14,10 @@
     "astro": "^3.0.3",
     "astro-icon": "^0.8.1",
     "astro-seo": "^0.8.0",
+    "reveal.js": "^4.6.1",
     "sass": "^1.64.2"
+  },
+  "devDependencies": {
+    "@types/reveal.js": "^4.4.3"
   }
 }

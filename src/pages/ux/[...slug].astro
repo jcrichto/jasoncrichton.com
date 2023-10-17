@@ -1,0 +1,144 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactCTA from "../../components/ContactCTA.astro";
+
+// import { sortByDate } from "../../utils/sortByDate.js";
+
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+
+
+interface Props {
+  entry: CollectionEntry<"ux">;
+}
+
+// This is a dynamic route that generates a page for every Markdown file in src/content/
+// Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
+// https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
+export async function getStaticPaths() {
+  const ux = await getCollection("ux");
+
+  return ux.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+
+const makeWorkTitle = entry.data.title
+  ? entry.data.title + " - " + entry.data.projectType
+  : "Jason Crichton | Creative Technology Leader";
+
+---
+
+
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Video, Audio and Iframes</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					
+         <img data-src="/assets/ux/uniteus/slides/cover.png" alt="">
+            
+				</section>
+
+				<section>
+					<img data-src="/assets/ux/uniteus/slides/contents.png" alt="">
+					
+				</section>
+
+				<section>
+					<img data-src="/assets/ux/uniteus/slides/overview.png" alt="">
+				</section>
+
+				<section>
+					<img data-src="/assets/ux/uniteus/slides/business-goals.png" alt="">
+				</section>
+
+				<section>
+					<h2>Background Video</h2>
+				</section>
+
+				<section>
+					<h2>Auto-playing audio</h2>
+					
+				</section>
+
+				<section>
+					<h2>Audio inside slide fragments</h2>
+					<div class="fragment">
+						Beep 1
+					
+					</div>
+					<div class="fragment">
+						Beep 2
+					
+					</div>
+				</section>
+
+				<section>
+					<h2>Audio with controls</h2>
+					
+				</section>
+
+			</div>
+
+		</div>
+
+
+
+
+
+<link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/white.css">
+<script src="/node_modules/reveal.js/dist/reveal.js" is:inline></script>
+<script>
+  // Reveal.initialize({hash: true});
+
+  Reveal.initialize({
+  // The "normal" size of the presentation, aspect ratio will
+  // be preserved when the presentation is scaled to fit different
+  // resolutions. Can be specified using percentage units.
+  // width: 960,
+  // height: 700,
+
+  // Factor of the display size that should remain empty around
+  // the content
+  // margin: 0.04,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  // minScale: 0.2,
+  // maxScale: 2.0,
+
+  hash: true,
+  // embedded: false
+});
+
+// document.querySelector( '.reveal' ).style.width = '50vw';
+
+</script>
+
+
+
+</body>
+</html>

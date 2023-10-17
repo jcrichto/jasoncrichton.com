@@ -19,3 +19,5 @@ All commands are run from the root of the project, from a terminal:
 
 [Documentation](https://docs.astro.build) 
 [Discord server](https://astro.build/chat)
+
+[Icon Set](https://icon-sets.iconify.design/)
