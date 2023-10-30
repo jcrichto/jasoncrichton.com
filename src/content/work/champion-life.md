@@ -1,9 +1,10 @@
 ---
 title: Champion LIFE
+tagline: Solving exclusive cult brand commerce through just-in-time inventory.
 projectType: Cult Brand Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/champion-life/listing.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img_alt: Champion LIFE.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: ../../../public/assets/work/champion-life/hero.jpg

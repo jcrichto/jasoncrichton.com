@@ -1,9 +1,10 @@
 ---
 title: Champion - Real Champions
-projectType: Experiential Commerce
+tagline:  Solving story-driven commerce through end-user connections.
+projectType: Story-Driven Commerce
 publishDate: 2020-03-01 00:00:00
 img: ../../../public/assets/work/real-champions/listing.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img_alt: Real Champion - BASE jumping.
 hero_type: video
 hero_video: /assets/work/real-champions/hero-c
 meta_img: /assets/work/real-champions/meta.jpg

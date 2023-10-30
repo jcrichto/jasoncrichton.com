@@ -1,6 +1,7 @@
 ---
 title: L'Oréal - Biolage
 projectType: Immersive Commerce
+tagline: Solving immersive commerce through hi-fidelity UI prototyping.
 publishDate: 2020-03-02 00:00:00
 img: ../../../public/assets/work/biolage/listing.jpg
 img_alt: Biolage Botanical Redesign

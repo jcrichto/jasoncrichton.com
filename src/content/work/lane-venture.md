@@ -1,5 +1,6 @@
 ---
 title: Bassett Furniture - Lane Venture
+tagline: Solving the B2B purchase path through customized digital tear sheets.
 projectType: Dealer Traffic Generation
 publishDate: 2018-12-01 00:00:00
 img: ../../../public/assets/work/lane-venture/listing.jpg

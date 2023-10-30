@@ -1,5 +1,6 @@
 ---
 title: Keratin Complex
+tagline: Solving marketing gaps and increased sales through headless commerce.
 projectType: Headless Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/keratin-complex/listing.jpg

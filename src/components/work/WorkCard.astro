@@ -4,14 +4,16 @@ import { Image } from "astro:assets";
 interface Props {
 	name: string;
 	slug: string;
+	tagline: string;
 }
 
-const { name, slug } = Astro.props;
+const { name, slug, tagline } = Astro.props;
 ---
 
 <a class="card" href={`/work/${slug}`}>
     <img src={`../../assets/work/${slug}/listing.jpg`} alt={name || ''} />
-	<span class="title">{name}</span>
+	<span class="title">test{name}</span>
+	<span class="tagline">{tagline}</span>
 </a>
 
 <style>

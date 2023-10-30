@@ -1,9 +1,10 @@
 ---
 title: L'Oréal - Seed Phytonutrients
+tagline: Building brand awareness through mission-driven e-commerce. 
 projectType: Mission-Driven Commerce
 publishDate: 2019-10-02 00:00:00
 img: ../../../public/assets/work/seed/listing.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img_alt: Seed Phytonutrients - Mission Driven Commerce.
 hero_type: img
 hero_video: /assets/work/keratin-complex/black-seq-contrast-opt.mp4
 hero_img: ../../../public/assets/work/seed/hero.jpg
