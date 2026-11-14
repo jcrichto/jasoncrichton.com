@@ -54,8 +54,8 @@ Going through an extensive discovery session with the client, the requirements w
 
 <picture>
 <source srcset="/assets/work/keratin-complex/system-architecture.webp" type="image/webp">
-<source srcset="/assets/work/keratin-complex/system-architecture.jpg" type="image/jpg"> 
-<img src="/assets/work/keratin-complex/system-architecture.jpg" alt="System Architecture" class="img-zoomable" />
+<source srcset="/assets/work/keratin-complex/system-architecture.png" type="image/png"> 
+<img src="/assets/work/keratin-complex/system-architecture.png" alt="System Architecture" class="img-zoomable" />
 </picture>
 
 </div>
